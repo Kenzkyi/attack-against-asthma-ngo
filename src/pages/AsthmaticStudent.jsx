@@ -1,22 +1,14 @@
 import React from 'react'
 import "../style/AsthmaticStudent.css"
-import arrow from "../assets/arrow.png"
+import HeroPart from "../components/HeroPart"
+import ApplicationForm from '../components/ApplicationForm'
 
 
 const AsthmaticStudent = () => {
   return (
-    <div className="bodyCon" >
-      <div className='heroPart'>
-
-        <div className='leftContainer'>
-          <div className='arrowCon'>
-            <img src={arrow} alt="" />
-          </div>
-          
-        </div>
-        <div className='rightContainer'></div>
-
-      </div>
+    <div className="bodyCon">
+      <HeroPart/>
+      <ApplicationForm />
     </div>
   )
 }
