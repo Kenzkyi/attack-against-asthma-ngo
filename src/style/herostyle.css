@@ -1,0 +1,113 @@
+   .heroPart {
+       width: 100%;
+       height: 670px;
+       background: url("../assets/hero.png");
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       display: flex;
+       flex-direction: row;
+   }
+
+   .heroPart h1 {
+       text-align: center;
+       font-size: 2rem;
+       color: black;
+   }
+
+   .heroPart p {
+       text-align: center;
+       font-size: 1rem;
+       color: black;
+   }
+
+   .leftContainer {
+       width: 50%;
+       height: 100%;
+       display: flex;
+       justify-content: end;
+       align-items: center;
+       /* float: left; */
+       padding: 10px;
+       /* background: #000; */
+   }
+
+   .leftContainerWrapper {
+       /* background: palevioletred; */
+       width: 85%;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       color: white;
+   }
+
+   .arrowCon {
+       /* width: 45%; */
+       /* max-width: 100%; */
+       /* height: 22%; */
+       /* background-color: saddlebrown; */
+       /* padding-top: 10px; */
+       float: right;
+       display: flex;
+       justify-content: flex-end;
+       /* margin-top: 70px; */
+       /* background: url(../images/arrowPic.png); */
+       /* background-position: center; */
+       /* background-size: cover; */
+       /* background-repeat: no-repeat; */
+
+       & img {
+           max-width: 30%;
+           /* width: 500px; */
+       }
+
+   }
+
+   .ourservice {
+       display: flex;
+       padding-left: 80px;
+       /* gap: 10px;
+       align-items: center; */
+
+       /* & .line{
+           height: 1px;
+           width: 70px;
+           background-color: white;
+       } */
+
+       & span {
+           /* font-size: 16px; */
+           font-weight: 600;
+
+       }
+
+   }
+
+   .empower {
+       font-size: 60px;
+       font-weight: 700;
+   }
+
+   .applyNow {
+       /* font-size: 16px; */
+       /* color: rgb(212, 212, 212); */
+       color: rgb(182, 212, 214);
+
+       & span {
+           font-weight: 700;
+       }
+   }
+
+   .rightContainer {
+       width: 50%;
+       height: 100%;
+       background-color: rgba(0, 0, 255, 0.452);
+       float: right;
+       background: url("../assets/asthmatic-page.png");
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+
+
+   }
