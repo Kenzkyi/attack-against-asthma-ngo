@@ -1,6 +1,6 @@
 import React from "react";
-import "./AboutUs.css";
-import HeroVideo from "../assets/HeroVideo.png";
+import "../style/AboutUs.css";
+// import HeroVideo from "../assets/HeroVideo.png";
 
 const AboutUs = () => {
   return (
