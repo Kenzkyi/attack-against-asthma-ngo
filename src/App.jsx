@@ -1,5 +1,4 @@
-import React from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+ import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Blog from './pages/Blog'
@@ -10,6 +9,8 @@ import Donate from './pages/Donate'
 
 const App = () => {
   return (
+
+    
     <HashRouter>
       <Routes>
         <Route path='' element={<Home/>}/>
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='contact-us' element={<ContactUs/>}/>
         <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>
         <Route path='volunteer' element={<Volunteer/>}/>
+        <Route path='donate' element={<Donate/>}/>
         <Route path='donate' element={<Donate/>}/>
       </Routes>
     </HashRouter>
