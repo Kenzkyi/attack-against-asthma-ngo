@@ -21,7 +21,6 @@ const App = () => {
         <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>
         <Route path='volunteer' element={<Volunteer/>}/>
         <Route path='donate' element={<Donate/>}/>
-        <Route path='donate' element={<Donate/>}/>
       </Routes>
     </HashRouter>
   )
