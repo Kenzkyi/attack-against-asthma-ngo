@@ -1,5 +1,5 @@
 
-import './Blog.css'
+import "../styles/Blog.css";
 
 const Blog = () => {
   return (
