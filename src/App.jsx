@@ -7,13 +7,12 @@ import ContactUs from './pages/ContactUs'
 import AsthmaticStudent from './pages/AsthmaticStudent'
 import Volunteer from './pages/Volunteer'
 import Donate from './pages/Donate'
-import PersonalInfo from './components/PersonalInfo'
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path='Home' element={<Home/>}/>
+        <Route path='' element={<Home/>}/>
         <Route path='about-us' element={<AboutUs/>}/>
         <Route path='blog' element={<Blog/>}/>
         <Route path='contact-us' element={<ContactUs/>}/>
