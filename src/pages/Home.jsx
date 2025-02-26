@@ -1,4 +1,4 @@
-import  '../style/home.css'
+import "../style/Home.css"
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaRegDotCircle } from "react-icons/fa";
