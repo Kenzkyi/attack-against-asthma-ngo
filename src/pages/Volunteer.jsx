@@ -1,5 +1,6 @@
 import React from 'react'
 import ApplicationForm from '../components/ApplicationForm'
+import "../style/Volunteer.css"
 
 const Volunteer = () => {
   return (
