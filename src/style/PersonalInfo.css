@@ -1,118 +1,212 @@
-.PersonalBody{
+.PersonalBody {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction:row;
-    /* background-color: aqua; */
+    flex-direction: row;
 }
-.RightDiv{
+
+/* Right Side */
+.RightDiv {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
 }
-.ImgDiv{
+
+.ImgDiv {
     width: 90%;
     height: 90%;
-    /* background-color: aqua; */
 }
-.Img{
+
+.Img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
-.LeftDiv{
+
+/* Left Side */
+.LeftDiv {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    /* background-color: red; */
 }
-.Wrapper{
-    width: 100%;
+
+.Wrapper {
+    width: 90%;
     height: 80%;
-    /* background-color:whitesmoke; */
     display: flex;
-    /* text-align: center; */
     flex-direction: column;
-  
 }
-.Header{
-width: 100%;
- height: 15%;
 
-
-
-}
-.CircleDiv{
+.Header {
     width: 100%;
-    height:60% ;
+    height: 15%;
+}
+
+/* Circles */
+.CircleDiv {
+    width: 100%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-
+    gap: 20px;
 }
-.TextDiv{
+
+.TextDiv {
     width: 100%;
     height: 40%;
     display: flex;
     justify-content: center;
+    font-size: 24px;
+    text-align: center;
+}
 
+.Circle {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border: 3px solid black;
+    border-radius: 50%;
 }
-.Circle{
-    width: 4%;
-    height: 55%;
-    background-color:green;
-    border-color:3px solid black ;
-    border-radius: 50px;
-}
-.Body{
+
+/* Body Section */
+.Body {
     width: 100%;
-    height: 85%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* background-color:pink; */
 }
-.InputDiv{
+
+/* Input & Button */
+.InputDiv {
     width: 100%;
-    height: 20%;
-    /* background-color: aquamarine; */
+    height: auto;
     display: flex;
-    padding-left: 65px;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    padding: 10px;
 }
-.InputStyle{
-    width: 80%;
-    height: 40%;
-    padding: 5px;
-    border-radius: 8px;
-    position: absolute;
-    bottom: -5%;
-}
-.ButtonDiv{
+
+.InputStyle {
     width: 90%;
-    height: 10%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.ButtonDiv {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left:60px;
-   
 }
-.Button{
+
+.Button {
     width: 90%;
-    height: 60%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     background-color: #125e64;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
 }
- 
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .TextDiv {
+        font-size: 22px;
+    }
+
+    .Circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .Wrapper {
+        width: 95%;
+    }
+
+    .Button {
+        font-size: 16px;
+    }
+
+    .InputStyle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .PersonalBody {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .RightDiv, 
+    .LeftDiv {
+        width: 100%;
+        height: auto;
+    }
+
+    .Img {
+        height: 40vh;
+    }
+
+    .TextDiv {
+        font-size: 20px;
+    }
+
+    .Circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .Wrapper {
+        height: auto;
+    }
+
+    .InputStyle {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .Button {
+        font-size: 16px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TextDiv {
+        font-size: 18px;
+    }
+
+    .Circle {
+        width: 25px;
+        height: 25px;
+    }
+
+    .InputStyle {
+        width: 100%;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .Button {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .Wrapper {
+        width: 100%;
+    }
+}

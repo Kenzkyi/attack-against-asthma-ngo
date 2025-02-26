@@ -1,151 +1,273 @@
-.SelectAmount{
+.SelectAmount {
     width: 100%;
     height: 100vh;
-    /* background-color: aqua; */
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
-.RightDiv{
+
+/* Right Side */
+.RightDiv {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
 }
-.ImgDiv{
+
+.ImgDiv {
     width: 90%;
     height: 90%;
-    /* background-color: aqua; */
 }
-.Img{
+
+.Img {
     width: 100%;
     height: 100vh;
 }
-.leftside2{
+
+/* Left Side */
+.leftside2 {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* background-color: red; */
 }
-.Wrapper2{
+
+.Wrapper2 {
     width: 100%;
     height: 80%;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    padding: 20px; /* Added padding for better spacing */
 }
-.Header2{
+
+.Header2 {
     width: 100%;
- height: 20%;
- /* background-color:red; */
+    height: 20%;
 }
-.TextDiv2{
+
+.TextDiv2 {
     width: 100%;
     height: 50%;
     font-size: 50px;
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 20px; /* Added space below */
 }
-.CircleDiv2{
+
+/* Circles */
+.CircleDiv2 {
     width: 100%;
-    height:50% ;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px; /* Increased gap */
+    margin-bottom: 20px; /* Added margin for better spacing */
 }
-.Circle{
-    width: 4%;
-    height: 60%;
-    background-color:green;
-    border-color:3px solid black ;
-    border-radius: 50px;
+
+.Circle {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border: 3px solid black;
+    border-radius: 50%;
 }
-.Body2{
+
+/* Amount Sections */
+.Body2 {
     width: 100%;
     height: 70%;
-    /* background-color:aqua; */
 }
-.Body3{
+
+.Body3 {
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
-    justify-content:center;
-    /* background-color:brown; */
+    justify-content: center;
 }
-.AmountDiv1{
+
+/* Amount Divs */
+.AmountDiv1,
+.AmountDiv2 {
     width: 100%;
-    height: 25%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 25px;
-    /* border-radius: 10px; */
-    /* background-color:aqua; */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 40px; /* Increased spacing */
+    margin-bottom: 20px; /* Added spacing */
 }
-.AmountDiv2{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 25px;
-    /* background-color:pink; */
-}
-.Amount{
-    width: 15%;
-    height: 40%;
-    border-radius: 5px;
+
+.Amount {
+    width: 18%;
+    height: 60px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 25px;
     color: white;
     background-color: #125e64;
+    padding: 10px; /* Added padding */
+    text-align: center;
 }
-.InputDiv2{
+
+/* Input & Button */
+.InputDiv2 {
     width: 100%;
     height: 40%;
-    /* background-color: aquamarine; */
     display: flex;
-    padding-left: 80px;
-    gap: 5px;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    padding: 20px; /* Adjusted padding */
 }
-.InputDiv3{
-  width: 100%;
-  height: 30%;
-  display: flex;
-  font-size: 20px;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* background-color: blueviolet; */
+
+.InputDiv3 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    font-size: 20px;
 }
-.InputStyle2{
+
+.InputStyle2 {
     width: 80%;
-    height: 45%;
-    padding: 5px;
+    height: 45px;
+    padding: 10px;
     font-size: 20px;
     border-radius: 8px;
     position: absolute;
     bottom: -5%;
 }
-.Button2{
+
+/* Button */
+.Button2 {
     width: 80%;
-    height: 75%;
+    height: 75px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     background-color: #125e64;
+    margin-top: 20px; /* Added space above button */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .TextDiv2 {
+        font-size: 40px;
+    }
+
+    .Circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .Amount {
+        width: 22%;
+        font-size: 22px;
+    }
+
+    .Button2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SelectAmount {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .RightDiv, 
+    .leftside2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .Img {
+        height: 50vh;
+    }
+
+    .TextDiv2 {
+        font-size: 35px;
+    }
+
+    .Circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .CircleDiv2 {
+        gap: 20px; /* Reduce space between circles */
+    }
+
+    .AmountDiv1, 
+    .AmountDiv2 {
+        gap: 20px;
+    }
+
+    .Amount {
+        width: 28%;
+        font-size: 20px;
+    }
+
+    .Button2 {
+        font-size: 22px;
+    }
+
+    .InputDiv2 {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TextDiv2 {
+        font-size: 28px;
+    }
+
+    .Circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .CircleDiv2 {
+        flex-wrap: wrap; /* Wrap circles if needed */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .AmountDiv1, 
+    .AmountDiv2 {
+        flex-direction: column; /* Stack amounts */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Amount {
+        width: 50%;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .InputStyle2 {
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .Button2 {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .InputDiv2 {
+        padding-left: 20px;
+    }
 }
