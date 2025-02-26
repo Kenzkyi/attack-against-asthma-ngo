@@ -7,12 +7,13 @@ import ContactUs from './pages/ContactUs'
 import AsthmaticStudent from './pages/AsthmaticStudent'
 import Volunteer from './pages/Volunteer'
 import Donate from './pages/Donate'
+import SelectAmount from './components/SelectAmount'
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path='' element={<Home/>}/>
+        <Route path='' element={<SelectAmount/>}/>
         <Route path='about-us' element={<AboutUs/>}/>
         <Route path='blog' element={<Blog/>}/>
         <Route path='contact-us' element={<ContactUs/>}/>
