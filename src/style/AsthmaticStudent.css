@@ -1,0 +1,6 @@
+.bodyCon{
+ width: 100%;
+ height: max-content;
+ background-color: skyblue;
+ /* overflow:  -moz-hidden-unscrollable; */
+}
