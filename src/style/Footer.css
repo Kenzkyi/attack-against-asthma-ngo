@@ -29,6 +29,7 @@
 
 h2{
     margin-bottom: 60px;
+    
 }
 
 .inputwrap{
@@ -70,6 +71,12 @@ h2{
     width: 45px;
     height: 45px;
     margin-left: 25px;
+}
+p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+
 }
 
 
