@@ -21,6 +21,39 @@ const ContactUs = () => {
             <img src="/src/assets/map.png" />
         </a>
       </div>
+      <div className="contactus-input">
+        <div className="contactusinput-holder">
+          <nav>
+            <main>
+              <header>
+                <div>
+                <label htmlFor="">Your Full Name</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+                <div>
+                <label htmlFor="">Your Email Address</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+              </header>
+              <header>
+                <div>
+                <label htmlFor="">Your Phone Number</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+                <div>
+                <label htmlFor="">Message Subject</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+              </header>
+            </main>
+            <aside>
+              <label htmlFor="">Message Subject</label>
+              <textarea name="" id="" placeholder='Type here'></textarea>
+            </aside>
+            <button>Submit</button>
+          </nav>
+        </div>
+      </div>
     </div>
   )
 }
