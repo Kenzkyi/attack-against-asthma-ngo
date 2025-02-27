@@ -1,0 +1,1452 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.HomePageWrapper{
+    width: 100%;
+    height: max-content;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
+    overflow: auto;
+}
+
+.Firstbg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/home-first-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.FirstbgColorDim{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.spnheader{
+    font-size: 40px;
+    /* background-color: green; */
+}
+
+p .attackagainstCancerText{
+    color: orangered;
+    font-size: 18px;
+}
+
+.FirstbgWriteup{
+    width: 60%;
+    height: 80%;
+    /* background-color: aliceblue; */
+    color: white;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    /* gap: 10px; */
+    
+}
+.FirstbgWriteup h2{
+    font-size: 40px;
+}
+
+.FirstbgWriteup p{
+    font-size: 18px;
+}
+.FirstbgWriteup span{
+    font-size: 16px;
+}
+
+.Donatebuttonwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    gap: 10px;
+    position: relative;
+}
+
+.Donatebutton{
+    width: 100px;
+    height: 45px;
+    background-color: rgb(21, 134, 134) ;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.DonatebuttonApply{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 5px; */
+    align-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropDown{
+    width: 38%;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    right: 34px;
+    bottom: -100px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;  
+    cursor: pointer;
+    /* gap: 10px; */
+}
+
+.dropDown{
+    background-color: bisque;
+}
+
+.dropDown h4{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Donatebutton:hover{
+    background-color: rgb(4, 75, 75) ;
+
+}
+
+.FirstbgFooter{
+    width: 100%;
+    height: 10%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.FirstbgFooter hr{
+    width: 40%;
+    margin: 0;
+    color: white;
+
+}
+.FirstbgFooter p{
+   
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family:  sans-serif;
+
+}
+
+.Seconddiv{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid orangered;
+}
+
+.SeconddivWrapper{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+}
+
+.ImageHolder{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+
+.Image2{
+    width: 100%;
+    height: 100%;
+}
+.TextwrapperSeconddiv{
+    width: 60%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textright{
+    width: 90%;
+    height: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:  rgb(4, 75, 75);
+    padding-left: 80px;
+    /* gap: 10px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.textright p{
+display: flex;
+width: 40%;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+font-weight: 600;
+/* background-color: blue; */
+gap: 20px;
+}
+ .textright hr{
+    width: 30%;
+    margin: 0;
+    color:  rgb(4, 75, 75) ;
+}
+ .textright h1{
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 5px;
+   
+   
+}
+ .textright h3{
+   font-size: 18px;
+   font-weight: 300;
+   /* letter-spacing: 2px; */
+   font-family: sans-serif;
+   
+}
+.Donatebutton2{
+    width: 100px;
+    height: 45px;
+    background-color: rgb(21, 134, 134) ;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 10px;
+}
+.Donatebutton2:hover{
+background-color:  rgb(11, 97, 97);
+}
+
+
+
+.Thirddivwrapper{
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Thirddiv{
+    width: 95%;
+    height: 95%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.RightTexthld{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.RightTextDiv{
+    width: 80%;
+    height: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    color:  rgb(4, 75, 75);
+    gap: 40px;
+
+}
+.RightTextDiv p{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    /* background-color: blue; */
+    gap: 10px;
+    }
+    
+    .RightTextDiv hr{
+       width: 40%;
+       margin: 0;
+       color:  rgb(4, 75, 75) ;
+   }
+    .RightTextDiv h1{
+     font-size: 45px;
+     font-weight: 1000;
+     font-family: sans-serif;
+       color:  rgb(4, 75, 75) ;
+   }
+    
+
+   .SDGText{
+    font-size: 45px;
+    color: orangered;
+   }
+
+     .dive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .LearnMorebtn{
+    width: 160px;
+    height: 50px;
+    background-color: rgb(21, 134, 134) ;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+    }
+
+    .LearnMorebtn:hover{
+        background-color: rgb(24, 61, 59);
+    }
+
+.LeftImg{
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdimage{
+    width: 100%;
+    height: 95%;
+}
+
+.fourtsectionWrapper{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(252, 241, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+
+}
+
+.fourtsection{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(252, 241, 237);
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.uppersection{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(136, 255, 0); */
+    flex-direction: column;
+    display: flex;
+    color:  rgb(21, 134, 134) ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* gap: 10px; */
+}
+
+.uppersection p{
+display: flex;
+width: 30%;
+justify-content: center;
+align-items: center;
+color:  rgb(21, 134, 134) ;
+flex-direction: row;
+font-family: sans-serif;
+font-size: 14px;
+font-weight: 600;
+}
+.uppersection hr{
+margin: 0px;
+width: 30%;
+color:  rgb(21, 134, 134) ;
+}
+.uppersection h2{
+font-family: sans-serif;
+font-size: 30px;
+padding-left: 10px;
+font-weight: 400;
+color:  rgb(21, 134, 134) ;
+}
+.AsthmaText{
+      color: orangered;
+      font-size: 40px;
+      letter-spacing: 5px;  
+}
+.downsection{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 241, 237);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blue; */
+    gap: 25px;
+    padding: 10px;
+}
+
+.downsectionbox{
+    width: 24%;
+    height: 85%;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box1{
+    width: 100%;
+    height: 50%;
+    /* border-radius: 0px 10px 10px 0px; */
+    /* background-color:rgb(252, 241, 237); */
+}
+
+.imagebox1{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px 10px 0px 0px;
+}
+.box2{
+    width: 100%;
+    height: 50%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.box11{
+    width: 85%;
+    height: 11%;
+    color: white;
+    background-color:  rgb(21, 134, 134);
+    border-radius: 0px 15px 0px 15px;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 9px;
+
+}
+
+
+.LearnMorebtn1{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(21, 134, 134);
+}
+
+
+
+.box12{
+    width: 90%;
+    height: 46%;
+    /* background-color: white; */
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    /* padding: 10px; */
+    margin-left: 10px;
+    color: rgb(18, 94, 99);
+}
+
+.ourpatners{
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourpartnerup{
+    width: 100%;
+    height: 40vh;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(0, 26, 17);
+}
+
+.partnertext{
+    width: 80%;
+    height: 40%;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnertext h4{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 0;
+    font-weight: 600;
+    color: rgb(21, 134, 134);
+}
+.partnertext h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin: 0;
+    color: rgb(21, 134, 134);
+}
+.partnerlog{
+    width: 80%;
+    height: 60%;
+    /* background-color: rgb(138, 20, 122); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* padding: 10px; */
+}
+
+.imgpartners{
+    width: 14%;
+    height: 80%;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnerslogos{
+    width: 100%;
+    height: 100%;
+
+}
+.ourpartnerdown{
+    width: 100%;
+    height: 110vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.HWSODonations1{
+    width: 80%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.HWSODonations1 h2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: rgb(21, 134, 134);
+}
+
+.HWSODonations1 hr{
+    width: 10%;
+    margin: 0;
+    border-top: 3px solid rgb(21, 134, 134);
+}
+.HWSODonations1 h5{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+}
+.HWSODonations2{
+    width: 90%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HWSDCard{
+ width: 30%;
+ height: 98%;
+ /* background-color: darkorange; */
+ /* border-radius: 20px; */
+ gap: 20px;
+}
+
+.CardImage{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardImfg{
+  width: 100%;
+  height: 100%;
+
+}
+.CardText{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(17, 128, 224); */
+    text-align: center;
+    /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+}
+.CardText h2{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: rgb(21, 134, 134)
+}
+.CardText h5{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0;
+}
+.CardFooter{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(179, 54, 204); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    color: black;
+    gap: 40px;
+}
+
+.CardFooter h4{
+    color: rgb(21, 134, 134);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.homefooter{
+    width: 100%;
+    height: 100vh;
+    background-color: wheat;
+    position: relative;
+}
+
+.upfooter{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.upfooterwrapper{
+    width: 90%;
+    height: 70%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.upfooterwrapper h4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.upfooterwrapper hr{
+    width: 70%;
+    border: 1px solid rgba(128, 128, 128, 0.26);
+}
+.uperfooterbox{
+ width: 100%;
+ height: 80%;
+ /* background-color: brown; */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ gap: 40px;
+}
+
+.FooterBox{
+    width: 45%;
+    height: 90%;
+    background-color: rgb(224, 111, 83);
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.FooterBox1{
+    width: 45%;
+    height: 90%;
+    background-color:rgb(18, 94, 99);
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.FB1{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(156, 109, 21); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FB1 h1{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.FB1 p{
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 600;
+}
+.FB2{
+  width: 70%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.FB2 h3{
+    font-family: sans-serif, monospace;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.FB2 h5{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.FB2 hr{
+    width: 10%;
+}
+.FB3{
+width: 10%;
+height: 100%;
+/* background-color: white; */
+/* border-radius: 25px; */
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+color: white;
+}
+
+.downfooter{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/home-eleven-pic.jpg);
+}
+
+.downfooterdim{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downfootertext{
+    width: 80%;
+    height: 60%;
+    color: white;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.downfootertext h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+.btnandselect{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+.Donatefooterbtn{
+width: 90px;
+height: 40px;
+background-color: rgb(21, 134, 134) ;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* gap: 5px; */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.Donatefooterbtn:hover{
+    background-color: rgba(6, 109, 109, 0.562);
+}
+
+.selectbtn{
+    width: 171px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    /* position: relative; */
+}
+
+.Toggledrop2{
+    width: 164px;
+    height: 80px;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    /* top: 70%; */
+    left: 48%;
+    top: 93%;
+    margin-right: 5px;
+}
+
+.Toggledrop2 h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .HomePageWrapper{
+        width: 100%;
+        height: max-content;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 5px; */
+        overflow: hidden;
+    }
+
+
+  .Firstbg{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   } 
+
+
+    
+
+   .FirstbgColorDim{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+
+
+    
+
+.FirstbgWriteup{
+    width: 90%;
+    height: max-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background: red; */
+    padding: 0;
+    
+}
+
+
+ 
+.FirstbgWriteup h2{
+    font-size: 20px;
+    margin: 0;
+}
+
+.FirstbgWriteup span{
+    font-size: 10px;
+}
+
+.DonatebuttonApply{
+    display: none;
+}
+.spnheader{
+    font-size: 20px;
+}
+
+.attackagainstCancerText{
+    color: orangered;
+}
+
+.FirstbgWriteup p{
+    font-size: 8px;
+}
+
+.FirstbgFooter{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    gap: 10px;
+}
+
+.FirstbgFooter hr{
+    width: 20%;
+    margin: 0;
+    color: white;
+}
+
+.FirstbgFooter p{
+   
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    font-family:  sans-serif;
+  
+  }
+
+
+.Donatebutton{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(21, 134, 134) ;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+/* .Seconddiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 38, 255);
+} */
+
+.SeconddivWrapper{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    /* background: orangered; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ImageHolder{
+    width: 90%;
+}
+
+.ImageHolder .Image2{
+    width: 100%;
+}
+
+.TextwrapperSeconddiv{
+    width: 90%;
+    /* background: #000; */
+}
+
+.textright{
+    text-align: center;
+    padding: 0;
+    /* background: green; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1, .AsthmaText{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    p{
+        width: 60%;
+        position: absolute;
+        top: -40px;
+    }
+}
+
+
+
+.Thirddiv{
+    background: #000;
+    flex-direction: column-reverse;
+}
+
+.RightTexthld{
+    width: 100%;
+    /* background: red; */
+}
+
+.RightTextDiv{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: green; */
+
+    p{
+        margin: 0;
+        width: 70%;
+    }
+
+    h1{
+      margin: 0;
+      width: 100%;
+      display: flex;
+      font-size: 18px;
+      text-align: center;
+      padding: 0;
+      gap: 1px;
+      /* background: #000; */
+    }
+}
+
+.SDGText{
+    margin: 0;
+   font-size: 18px; 
+}
+
+.dive{
+    margin: 0;
+    padding: 0;
+}
+
+.RightTextDiv button{
+    padding: 15px;
+}
+
+.LeftImg{
+    width: 100%;
+}
+
+.uppersection{
+    font-size: 0px;
+    text-align: center;
+    /* background: #000; */
+
+    p{
+        width: 100%;
+        text-align: center;
+
+        hr{
+            display: none;
+        }
+    }
+
+    h2{
+        margin-left: 20px;
+    }
+}
+
+.fourtsectionWrapper{
+    height: max-content;
+}
+
+.downsection{
+    flex-direction: column;
+}
+
+.downsectionbox{
+    width: 80%;
+}
+
+
+.partnertext h1{
+    font-size: 20px;
+}
+
+.partnerlog{
+    width: 90%;
+    height: 100px;
+    /* background: #000; */
+}
+
+.imgpartners{
+    width: 100px;
+    height: 40%;
+    /* background: orange; */
+
+   
+}
+
+ .imgpartners img{
+        width: 100%;
+    }
+
+
+    .HWSODonations1{
+        /* background: blue; */
+
+        h2{
+            font-size: 20px;
+
+            hr{
+                display: none;
+            }
+        }
+
+        h5{
+            font-size: 15px;
+        }
+    }
+
+
+    .HWSODonations2{
+        flex-direction: column;
+    }
+
+    .HWSDCard{
+        width: 100%;
+        height: max-content;
+    }
+
+    .CardImage{
+        height: 300px;
+        height: max-content;
+    }
+
+    .CardText{
+        height: max-content;
+    }
+    .homefooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .upfooterwrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+       
+    }
+    .upfooterwrapper h4{
+    font-size: 12px;
+    padding-left: 180px;
+    
+    }
+    .upfooterwrapper hr{
+    display: none;
+
+    }
+
+    .uperfooterbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FooterBox{
+     width: 90%;
+     height: 80px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     margin: 0;
+     gap: 10px;
+    }
+    .FooterBox1{
+     width: 90%;
+     height: 80px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     margin: 0;
+     gap: 10px;
+    }
+    
+
+    .FB1 {
+        gap: 10px;
+        
+    }
+    .FB1 h1{
+        font-size: 15px;
+        margin: 0;
+        
+    }
+    .FB1 p{
+        font-size: 10px;
+        margin: 0;
+        
+    }
+    
+    .FB2{
+        gap: 20px;
+        padding: 0;
+    }
+    .FB2 h5{
+        margin: 0;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .FB2 h3{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .FB3{
+        font-size: 35px;
+    }
+    .selectbtn{
+        display: none;
+    }
+    .downfooter{
+        width: 100%;
+        height: 50%;
+        
+    }
+    .downfooterdim{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+
+    }
+    .downfootertext{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .downfootertext h1{
+        font-size: 18px;
+        font-weight: 900;
+        font-family: sans-serif, monospace;
+    }
+
+}

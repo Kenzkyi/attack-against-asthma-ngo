@@ -1,0 +1,103 @@
+.contribution-sec {
+  background-image: url("/src/assets/home-eleven-pic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #f5f7fa;
+  padding: 50px 5%;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contribution-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contribution-body {
+  position: relative;
+  z-index: 2;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text-sec {
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.donate-btn {
+  background: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.donate-btn:hover {
+  background-color: darkcyan;
+}
+
+.dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contribution-sec {
+    padding: 40px 10px;
+  }
+
+  .contribution-body {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .text-sec {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .donate-btn,
+  .dropdown {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
