@@ -16,12 +16,12 @@ function Footer(){
     const navigate = useNavigate();
 
     const handleHome=()=>{
-      navigate("/")
+      navigate("")
     }
   
-    const handleAbout=()=>{
-      navigate("/about-us")
-    }
+    // const handleAbout=()=>{
+    //   navigate("/about-us")
+    // }
   
     const handleBlog=()=>{
       navigate("/blog")
@@ -46,7 +46,7 @@ function Footer(){
                 <div className="">
                     <h2>Quick links</h2>
                     <h3 onClick={handleHome}>Home</h3>
-                    <h3 onClick={handleAbout}>About Us</h3>
+                    <h3>About Us</h3>
                     <h3 onClick={handleContact}>Contact Us</h3>
                     <h3 onClick={handleBlog}>Blog</h3>
                 </div>
