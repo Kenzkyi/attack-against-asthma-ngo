@@ -1,6 +1,6 @@
 .fullwrap{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-color: whitesmoke;
 }
 
@@ -23,13 +23,24 @@
     width: 80%;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 50px;
     margin-top: 90px;
 }
 
 h2{
     margin-bottom: 60px;
     
+}
+
+h3{
+    padding: 10px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+p{
+    padding: 10px;
+    cursor: pointer;
 }
 
 .inputwrap{
@@ -47,6 +58,7 @@ h2{
     color: white;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -54,7 +66,6 @@ h2{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
     margin-left: 50px;
 }
 
@@ -68,8 +79,8 @@ h2{
 }
 
 .mediaicon{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-left: 25px;
 }
 p{
@@ -78,6 +89,7 @@ p{
     font-family: Montserrat;
 
 }
+
 
 
 

@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 const ContactUs = () => {
   return (
     <div className='contact-us'>
-      <Header/>
+     
       <div className="contact-us-wrapper">
         <div className="contactus-left">
             <h6>Contact Us</h6>
@@ -24,7 +24,7 @@ const ContactUs = () => {
             <img src="/src/assets/map.png" />
         </a>
       </div>
-      <Footer/>
+     
     </div>
   )
 }

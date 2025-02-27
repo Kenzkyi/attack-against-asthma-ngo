@@ -1,4 +1,4 @@
-import '../styles/homepage.css'
+import '../style/home.css'
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
