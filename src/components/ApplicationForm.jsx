@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import "../style/ApplicationForm.css"
 
 const ApplicationForm = ({ settingFormType }) => {
-    const [formType, setformType] = useState(settingFormType || "asthmaticStudent")
+    const [formType, setFormType] = useState(settingFormType || "asthmaticStudent")
     return (
         <div className='applicationForm'>
             <form action="" >

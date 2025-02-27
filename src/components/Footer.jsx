@@ -1,14 +1,9 @@
-import React from "react";
 import "../style/Footer.css"
 import picture from "../assets/logo1.png"
 import pix1 from "../assets/youtube1.png"
 import pix2 from "../assets/twitter1.png"
 import pix3 from "../assets/instagram1.png"
 import pix4 from "../assets/facebook1.png"
-
-
-
-
 
 function Footer(){
     return(
