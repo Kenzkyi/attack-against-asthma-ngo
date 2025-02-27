@@ -9,7 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -17,7 +17,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 
 const Home = () => {
-  // Const navigate = useNavigate()
+  const navigate = useNavigate()
   const [dropDown, setDropDown] = useState(false)
 
   const toggleDropDown = () => {
@@ -41,13 +41,13 @@ const Home = () => {
         needs inhalers but cannot afford them, ensuring everyone has the chance <br />
         to breathe freely and live healthier lives.</p>
         <div className='Donatebuttonwrapper'>
-          <button className='Donatebutton' >Donate</button>
+          <button className='Donatebutton' onClick={()=>navigate('/donate')}>Donate</button>
           <div className='DonatebuttonApply' onClick={toggleDropDown}>Apply as 
               <span> { !dropDown ?  <IoIosArrowDown  size={20}/>: <IoIosArrowUp size={20} /> }</span></div>
               {dropDown && (
                 <div className='dropDown'>
-                  <h4>Asthetic Student</h4>
-                  <h4>Volunteer</h4>
+                  <h4 onClick={()=>navigate('/asthmatic-student')}>Asthetic Student</h4>
+                  <h4 onClick={()=>navigate('/volunteer')}>Volunteer</h4>
                 </div>
                 
               )}
@@ -72,7 +72,7 @@ const Home = () => {
              conomic marginalized groups in Nigeria to promote good health amon
              g the patients and reduce the risk of asthma, premature mortality and
               asthma communities.</h3>
-              <button className='Donatebutton2'>Donate</button>
+              <button className='Donatebutton2' onClick={()=>navigate('/donate')}>Donate</button>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ const Home = () => {
              <div className='dive'> <FaRegCircle  style={{color: "orangered", fontSize: '18px'}}/>      To proffer free asthma medications to socioeconomically <br /> marginalized groups, communities and individuals in Nigeri.
              </div>
              <div className='dive'> <FaRegDotCircle  style={{color: "orangered", fontSize: '18px'}}/>      To improve access to healthcare among socioeconomically <br /> disadvantaged through awareness, free medication and health promotion activities.</div>
-             <button className='LearnMorebtn'>Learn More  <FaArrowRight /></button>
+             <button className='LearnMorebtn' onClick={()=>navigate('/about-us')}>Learn More  <FaArrowRight /></button>
             </div>
          </div>
          <div className='LeftImg'>
@@ -121,7 +121,7 @@ const Home = () => {
                  of our <span style={{color: "orangered", fontSize: '11px'}}>volunteers...</span>
 
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
@@ -140,7 +140,7 @@ const Home = () => {
                  
 
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
@@ -161,7 +161,7 @@ const Home = () => {
                  
 
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
@@ -179,7 +179,7 @@ const Home = () => {
                 . This includes lobbying for better
                  access to affordable asthma medication.
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             
@@ -311,14 +311,14 @@ const Home = () => {
                 <h1>You Can Contribute To A Society That Is Asthma Aware
                    And Providing Inhalers For Asthmatic Student. </h1>
                   <div className='btnandselect'>
-                    <button className='Donatefooterbtn'>Donate</button>
+                    <button className='Donatefooterbtn' onClick={()=>navigate('/donate')}>Donate</button>
                     <div className="selectbtn" onClick={handleTgoggleDrop}>
                        Apply as 
                    <span> { !toggleDown ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp /> } </span> </div>
                    { toggleDown && (
                     <div className='Toggledrop2'>
-                      <h4>Asthmatic Students</h4>
-                       <h4>Volunteer</h4>
+                      <h4 onClick={()=>navigate('/asthmatic-student')}>Asthmatic Students</h4>
+                       <h4 onClick={()=>'/volunteer'}>Volunteer</h4>
                     </div>
                    )}
                   </div>
