@@ -17,9 +17,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 
 const Home = () => {
-
   // Const navigate = useNavigate()
-
   const [dropDown, setDropDown] = useState(false)
 
   const toggleDropDown = () => {
@@ -61,8 +59,6 @@ const Home = () => {
        </div>
       </div>
       </div>
-
-
       <div className='Seconddiv'>
         <div className='SeconddivWrapper'>
           <div className='ImageHolder'>
@@ -81,9 +77,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
-
       <div className='Thirddivwrapper'>
         <div className='Thirddiv'>
          <div className='RightTexthld'>
@@ -104,9 +97,6 @@ const Home = () => {
          </div>
         </div>
       </div>
-
-
-
       <div className='fourtsectionWrapper'>
         <div className='fourtsection'>
            <div className='uppersection'>
@@ -226,16 +216,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-
         <div className='ourpartnerdown'>
           <div className='HWSODonations1'>
             <h2><hr />How Spend Your Donations <hr /></h2>
             <h5>Nigeria is among the highest ranking African countries in terms of the prevalence of asthma. <br />
             However, more than half of asthma patients in Nigeria do not have access to the appropriate <br /> asthma care and knowledge</h5>
           </div>
-
-
           <div className='HWSODonations2'>
             <div className='HWSDCard'>
               <div className='CardImage'>
@@ -253,7 +239,6 @@ const Home = () => {
               <h4>See More</h4>
               </div>
             </div>
-            
             <div className='HWSDCard'>
               <div className='CardImage'>
                 <img src="src/assets/home-nine-pic.jpg" alt=""  className='CardImfg' />

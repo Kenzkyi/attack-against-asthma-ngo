@@ -1,9 +1,11 @@
 import React from 'react'
+import ApplicationForm from '../components/ApplicationForm'
+import "../style/Volunteer.css"
 
 const Volunteer = () => {
   return (
-    <div>
-      
+    <div className="bodyCon" >
+      <ApplicationForm settingFormType="volunteer" />
     </div>
   )
 }
