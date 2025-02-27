@@ -1,21 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
 .main-container {
-  height: 100vh;
   width: 100%;
-  padding: 20px;
+  padding: 40px 0px;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
 }
 
 .about-grid {
   display: grid;
-  margin-top: 100px;
-  width: 80%;
+  width: 100%;
+  padding: 0 30px;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px;
-  max-width: 1200px;
+  gap: 40px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .divider-cont {
@@ -23,6 +32,10 @@
   align-items: center;
   gap: 10px;
   margin-left: 10px;
+}
+
+.bio-text-sec {
+  width: 100%;
 }
 
 .divider {
@@ -97,21 +110,30 @@
 }
 
 .image-container {
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-top: 70px;
-  max-width: 1200px;
+  padding: 0px 40px;
+  /* max-width: 1200px; */
+  aspect-ratio: 0 !important;
 }
 
-.team-image {
+.image-container-wrap {
+  position: relative;
   width: 100%;
-  height: 80%;
-  border-radius: 1px;
+  height: 290px;
+}
+
+.team-image2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .play-button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -119,13 +141,25 @@
   border: none;
   font-size: 24px;
   border-radius: 50%;
+
   padding: 10px 20px;
   cursor: pointer;
 }
 
+.image-bg-about {
+  width: 100%;
+  height: 290px;
+  background: #000;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  opacity: 50%;
+  border-radius: 8px;
+}
+
 .bio-mission {
   text-align: center;
-  width: 86%;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -145,6 +179,7 @@
 }
 
 .bio-text {
+  width: 100%;
   font-size: 14px;
   color: #555;
   line-height: 1.6;
