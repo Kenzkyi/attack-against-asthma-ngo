@@ -16,19 +16,19 @@ function Footer(){
     const navigate = useNavigate();
 
     const handleHome=()=>{
-      navigate("")
+      navigate("/")
     }
   
     const handleAbout=()=>{
-      navigate("about-us")
+      navigate("/about-us")
     }
   
     const handleBlog=()=>{
-      navigate("blog")
+      navigate("/blog")
     }
   
     const handleContact=()=>{
-      navigate("contact-us")
+      navigate("/contact-us")
     }
   
    

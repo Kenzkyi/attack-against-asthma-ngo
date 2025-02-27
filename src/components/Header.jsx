@@ -6,38 +6,33 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleHome=()=>{
-    navigate("")
+    navigate("/")
   }
 
   const handleBlog=()=>{
-    navigate("blog")
+    navigate("/blog")
   }
 
   const handleContact=()=>{
-    navigate("contact-us")
+    navigate("/contact-us")
   }
 
   const handleAbout=()=>{
-    navigate("about-us")
+    navigate("/about-us")
   }
 
 
   const handleDonate=()=>{
-    navigate("donate")
+    navigate("/donate")
   }
 
   const handleVolunteer=()=>{
-    navigate("volunteer")
+    navigate("/volunteer")
   }
 
   const handleASthmatic=()=>{
-    navigate("asthmatic-student")
+    navigate("/asthmatic-student")
   }
-
-
-
-
-
 
 
   return (
