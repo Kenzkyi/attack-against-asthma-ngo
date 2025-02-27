@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { FaCreditCard, FaUniversity } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import "../style/ChoosePayment.css"
+import "../style/donate3.css"
 
-const ChoosePayment = () => {
+const Donate3 = () => {
     const [selectedMethod, setSelectedMethod] = useState('card');
   return (
     <div>
@@ -80,4 +80,4 @@ const ChoosePayment = () => {
   )
 }
 
-export default ChoosePayment
+export default Donate3

@@ -1,0 +1,96 @@
+.fullwrap{
+    width: 100%;
+    height: 70vh;
+    background-color: whitesmoke;
+}
+
+.footernotifications{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    gap: 20px;
+ 
+}
+
+.homeicon{
+    width: 20%;
+    height: 30%;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.writeupcont{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 90px;
+}
+
+h2{
+    margin-bottom: 60px;
+    
+}
+
+h3{
+    padding: 10px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+p{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inputwrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    width: 30%;
+    height: 40px;
+    margin-left: 130px;
+    margin-top: 20px;
+    background-color: darkcyan;
+    font-weight: bolder;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.socialmediawrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.iconwrap{
+    width: 35%;
+    display: flex;
+    gap: 70px;
+ 
+
+
+}
+
+.mediaicon{
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+}
+p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+
+}
+
+
+
+
+
