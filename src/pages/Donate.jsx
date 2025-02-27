@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import "../style/donate.css"
+=======
+import React from 'react'
+import "../style/Donate.css"
+>>>>>>> 33554b8ba99b183bdb833139adbe84207593b0ab
 const Donate = () => {
   return (
     <div>
