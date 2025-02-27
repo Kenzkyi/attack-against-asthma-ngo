@@ -1,6 +1,6 @@
  import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import AboutUs from './pages/AboutUs'
+// import AboutUs from './pages/AboutUs'
 import Blog from './pages/Blog'
 import ContactUs from './pages/ContactUs'
 import AsthmaticStudent from './pages/AsthmaticStudent'
@@ -15,7 +15,7 @@ const App = () => {
     <HashRouter>
       <Routes>
         <Route path='' element={<Home/>}/>
-        <Route path='about-us' element={<AboutUs/>}/>
+        {/* <Route path='about-us' element={<AboutUs/>}/> */}
         <Route path='blog' element={<Blog/>}/>
         <Route path='contact-us' element={<ContactUs/>}/>
         <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>

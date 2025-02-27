@@ -5,12 +5,36 @@ import pix1 from "../assets/youtube1.png"
 import pix2 from "../assets/twitter1.png"
 import pix3 from "../assets/instagram1.png"
 import pix4 from "../assets/facebook1.png"
+import { useNavigate } from "react-router-dom";
 
 
 
 
 
 function Footer(){
+
+    const navigate = useNavigate();
+
+    const handleHome=()=>{
+      navigate("/")
+    }
+  
+    // const handleAbout=()=>{
+    //   navigate("/about-us")
+    // }
+  
+    const handleBlog=()=>{
+      navigate("/blog")
+    }
+  
+    const handleContact=()=>{
+      navigate("/contact-us")
+    }
+  
+   
+  
+  
+  
     return(
         <div className="fullwrap">
             <div className="footernotifications">
@@ -21,10 +45,10 @@ function Footer(){
                 <div className="writeupcont">
                 <div className="">
                     <h2>Quick links</h2>
-                    <h3>Home</h3>
+                    <h3 onClick={handleHome}>Home</h3>
                     <h3>About Us</h3>
-                    <h3>Contact Us</h3>
-                    <h3>Blog</h3>
+                    <h3 onClick={handleContact}>Contact Us</h3>
+                    <h3 onClick={handleBlog}>Blog</h3>
                 </div>
 
                 <div>
