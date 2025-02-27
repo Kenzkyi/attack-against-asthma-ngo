@@ -1,0 +1,658 @@
+.Body{
+    height: 400vh;
+    width: 100%;
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bodywrap{
+    height: 130%;
+    width: 98%;
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textwrap{
+    height: 20%;
+    width: 95%;
+    /* background: rgb(255,255,255); */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    & p {
+        color: rgb(180,90,67);
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;       
+        font-weight: 400;
+    }
+
+    & h1 {
+        color: black;
+        font-size: 40px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.imagewrap{
+    height:96% ;
+    width: 95%;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagewrap1{
+    height: 93%;
+    width: 45%;
+    /* background: gray; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    /* background: pink; */
+    object-fit: cover;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.textt{
+    height: 10%;
+    width: 95%;
+    background: rgb(18,94,100);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 13px 0px 13px;
+    
+    & h1 {
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;       
+        font-size: 400;
+        color: white;
+    }
+}
+
+.text1{
+    height: 30%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 28px;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;       
+
+
+    }
+
+    & strong {
+        color: orange;
+        font-weight: 400;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;       
+
+    }
+}
+
+.btn{
+    height: 20%;
+    width: 100%;
+    /* background: greenyellow; */
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    & button {
+        height: 60%;
+        width: 50%;
+        border: none;
+        outline: none;
+        background: rgb(18,94,100);
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.imagewrap2{
+    height: 93%;
+    width: 45%;
+    /* background: gray; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    /* background: pink; */
+    object-fit: cover;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.textt{
+    height: 10%;
+    width: 95%;
+    background: rgb(18,94,100);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 13px 0px 13px;
+    
+    & h1 {
+        font-size: 14px;
+        font-family: 
+        Inter (woff2)
+        sans-serif;
+        font-size: 400;
+    }
+}
+
+.text1{
+    height: 30%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 19px;
+    }
+
+    & strong {
+        color: orange;
+    text-decoration: underline;
+    }
+}
+
+.btn{
+    height: 20%;
+    width: 100%;
+    /* background: greenyellow; */
+    display: flex;
+    align-items: center;
+
+    & button {
+        height: 55%;
+        width: 45%;
+        border: none;
+        outline: none;
+        padding-right: 20px;
+        background: rgb(18,94,100);
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        /* transform: scale(1.1); */
+
+        
+    }
+
+    & button:hover{
+        transform: scale(1.1);
+        color: white;
+        }
+}
+
+
+.imagewrap3{
+    height: 93%;
+    width: 45%;
+    /* background: gray; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    /* background: pink; */
+    object-fit: cover;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.text{
+    height: 15%;
+    width: 95%;
+    background: rgb(18,94,100);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 13px 0px 13px;
+    
+    & h1 {
+        font-size: 14px;
+        font-family: 
+        Inter (woff2)
+        sans-serif;
+        font-size: 400;
+    }
+}
+
+.text1{
+    height: 30%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 14px;
+    }
+
+    & strong {
+        color: orange;
+    }
+}
+
+.btn{
+    height: 20%;
+    width: 100%;
+    /* background: greenyellow; */
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    & button {
+        height: 60%;
+        width: 50%;
+        border: none;
+        outline: none;
+        background: rgb(18,94,100);
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.bodywrap1{
+    height: 110%;
+    width: 95%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagewrap{
+    height:96% ;
+    width: 95%;
+    /* background: red; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagewrap1{
+    height: 93%;
+    width: 45%;
+    /* background: gray; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    /* background: pink; */
+    object-fit: cover;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.text{
+    height: 15%;
+    width: 95%;
+    background: rgb(18,94,100);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 13px 0px 13px;
+    
+    & h1 {
+        font-size: 14px;
+        font-family: 
+        Inter (woff2)
+        sans-serif;
+        font-size: 400;
+    }
+}
+
+.text1{
+    height: 30%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 14px;
+    }
+
+    & strong {
+        color: orange;
+    }
+}
+
+.btn{
+    height: 20%;
+    width: 100%;
+    /* background: greenyellow; */
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    & button {
+        height: 60%;
+        width: 50%;
+        border: none;
+        outline: none;
+        background: rgb(18,94,100);
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.imagewrap2{
+    height: 93%;
+    width: 45%;
+    /* background: gray; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    /* background: pink; */
+    object-fit: cover;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.text{
+    height: 15%;
+    width: 95%;
+    background: rgb(18,94,100);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 13px 0px 13px;
+    
+    & h1 {
+        font-size: 14px;
+        font-family: 
+        Inter (woff2)
+        sans-serif;
+        font-size: 400;
+    }
+}
+
+.text1{
+    height: 30%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 14px;
+    }
+
+    & strong {
+        color: orange;
+    }
+}
+
+.btn{
+    height: 20%;
+    width: 100%;
+    /* background: greenyellow; */
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    & button {
+        height: 60%;
+        width: 50%;
+        border: none;
+        outline: none;
+        background: rgb(18,94,100);
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+.imagewrap3{
+    height: 93%;
+    width: 45%;
+    /* background: gray; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img{
+    height: 40%;
+    width: 100%;
+    /* background: pink; */
+    object-fit: cover;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.text{
+    height: 15%;
+    width: 95%;
+    background: rgb(18,94,100);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 13px 0px 13px;
+    
+    & h1 {
+        font-size: 14px;
+        font-family: 
+        Inter (woff2)
+        sans-serif;
+        font-size: 400;
+    }
+}
+
+.text1{
+    height: 30%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    & h1 {
+        font-size: 14px;
+    }
+
+    & strong {
+        color: orange;
+    }
+}
+
+.btn{
+    height: 20%;
+    width: 100%;
+    /* background: greenyellow; */
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    & button {
+        height: 60%;
+        width: 50%;
+        border: none;
+        outline: none;
+        background: rgb(18,94,100);
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+}
+
+.bodywrap2{
+    height: 100%;
+    width: 98%;
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodywrapper{
+    height: 100%;
+    width: 50%;
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bodywrapper2{
+    height: 50%;
+    width:  95%;
+    /* background: red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    & strong {
+        color: rgb(225,113,84);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    & p {
+        font-size: 15px;
+        color: rgb(18,94,100);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    & h1 {
+     font-size: 40px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: rgb(18,94,100);
+    }
+
+    & h2 {
+    font-size: 20px;
+    color: rgb(18,94,100);
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    & button {
+        height: 15%;
+        width: 25%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: rgb(18,94,100);
+    }
+}
+
+.bodywrapper1{
+    height: 100%;
+    width: 45%;
+    /* background: red; */
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.manshowing{
+    height: 90%;
+    width: 90%;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    & img {
+        height: 100%;
+        width: 98%;
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import "./AboutUs.css";
-import HeroVideo from "../assets/HeroVideo.png";
+import "../style/AboutUs.css";
+// import HeroVideo from "../assets/HeroVideo.png";
 
 const AboutUs = () => {
   return (
@@ -33,7 +33,7 @@ const AboutUs = () => {
       </header>
       <div className="image-container">
         <img
-          src={HeroVideo}
+          // src={HeroVideo}
           alt="Team members of Attack Against Asthma"
           className="team-image"
         />
