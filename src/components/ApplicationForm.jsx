@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import "../style/ApplicationForm.css"
-import Header from "../components/Header"
 
 const ApplicationForm = ({ settingFormType }) => {
     const [formType, setformType] = useState(settingFormType || "asthmaticStudent")
     return (
         <>
-        <Header />
+        
         <div className='applicationForm'>
             <form action="" >
                 <h1>Application Form</h1>
