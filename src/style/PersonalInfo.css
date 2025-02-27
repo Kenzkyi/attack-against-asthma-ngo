@@ -1,0 +1,118 @@
+.PersonalBody{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    /* background-color: aqua; */
+}
+.RightDiv{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+.ImgDiv{
+    width: 90%;
+    height: 90%;
+    /* background-color: aqua; */
+}
+.Img{
+    width: 100%;
+    height: 100vh;
+}
+.LeftDiv{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: red; */
+}
+.Wrapper{
+    width: 100%;
+    height: 80%;
+    /* background-color:whitesmoke; */
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+  
+}
+.Header{
+width: 100%;
+ height: 15%;
+
+
+
+}
+.CircleDiv{
+    width: 100%;
+    height:60% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.TextDiv{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+.Circle{
+    width: 4%;
+    height: 55%;
+    background-color:green;
+    border-color:3px solid black ;
+    border-radius: 50px;
+}
+.Body{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color:pink; */
+}
+.InputDiv{
+    width: 100%;
+    height: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    padding-left: 65px;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.InputStyle{
+    width: 80%;
+    height: 40%;
+    padding: 5px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -5%;
+}
+.ButtonDiv{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:60px;
+   
+}
+.Button{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #125e64;
+}
+ 
+

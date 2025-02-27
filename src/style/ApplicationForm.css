@@ -1,0 +1,96 @@
+.applicationForm {
+    width: 100%;
+    background: #F2FFF9;
+    min-height: 756px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & form {
+        background: #FFFFFF;
+        width: 90%;
+        min-height: 602px;
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        & h1 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        & button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #125E64;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.inputWrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputContainer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    font-family: Noto Sans;
+    color: #7C8B9D;
+
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        & label {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        & input,
+        select {
+            height: 56px;
+            padding: 10px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #BAB9C1;
+        }
+    }
+}
+
+.MessageSubject {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    outline: none;
+    font-family: Noto Sans;
+    color: #7C8B9D;
+
+    & label {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    & textarea {
+        height: 218px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #BAB9C1;
+        border-radius: 8px;
+        resize: none;
+    }
+}
