@@ -1,5 +1,5 @@
 import React from 'react'
-import "../style/donate.css"
+import "../style/Donate.css"
 const Donate = () => {
   return (
     <div>
