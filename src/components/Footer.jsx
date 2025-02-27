@@ -16,7 +16,7 @@ function Footer(){
     const navigate = useNavigate();
 
     const handleHome=()=>{
-      navigate("")
+      navigate("/")
     }
   
     // const handleAbout=()=>{

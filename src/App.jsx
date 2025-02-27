@@ -15,11 +15,11 @@ const App = () => {
       <Routes>
         <Route path='' element={<Home/>}/>
         {/* <Route path='about-us' element={<AboutUs/>}/> */}
-        <Route path='/blog' element={<Blog/>}/>
-        <Route path='/contact-us' element={<ContactUs/>}/>
-        <Route path='/asthmatic-student' element={<AsthmaticStudent/>}/>
-        <Route path='/volunteer' element={<Volunteer/>}/>
-        <Route path='/donate' element={<Donate/>}/>
+        <Route path='blog' element={<Blog/>}/>
+        <Route path='contact-us' element={<ContactUs/>}/>
+        <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>
+        <Route path='volunteer' element={<Volunteer/>}/>
+        <Route path='donate' element={<Donate/>}/>
       </Routes>
     </HashRouter>
   )
