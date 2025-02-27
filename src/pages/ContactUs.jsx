@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-=======
 import React from 'react'
->>>>>>> 33554b8ba99b183bdb833139adbe84207593b0ab
 import '../style/ContactUs.css'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons'
 

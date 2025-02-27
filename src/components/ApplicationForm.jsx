@@ -4,6 +4,8 @@ import "../style/ApplicationForm.css"
 const ApplicationForm = ({ settingFormType }) => {
     const [formType, setFormType] = useState(settingFormType || "asthmaticStudent")
     return (
+        <>
+        
         <div className='applicationForm'>
             <form action="" >
                 <h1>Application Form</h1>
@@ -52,10 +54,10 @@ const ApplicationForm = ({ settingFormType }) => {
                                         <div>
                                             <label htmlFor="Availability">Availability</label>
                                             <select name="Availability" id="Availability" required >
-                                                <option value="">Type here</option>
-                                                <option value="Full Time">Full Time</option>
-                                                <option value="Part Time">Part Time</option>
-                                                <option value="Weekends">Weekends</option>
+                                                <option value="">Availability</option>
+                                                <option value="Short Term (2 - 3year)">Short Term (2 - 3year)</option>
+                                                <option value="Long Term (3- 10year)">Long Term (3- 10year)</option>
+                                                {/* <option value="Weekends">Weekends</option> */}
                                             </select>
                                         </div>
                                     </div>
@@ -70,6 +72,7 @@ const ApplicationForm = ({ settingFormType }) => {
                 <button type="submit">Submit</button>
             </form>
         </div>
+        </>
     )
 }
 
