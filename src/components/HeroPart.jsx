@@ -14,7 +14,7 @@ const HeroPart = ({settingHeroPart}) => {
                         <img src={arrow} alt="" />
                     </div>
                     <div className="ourservice">
-                        <div className="line"></div>
+                        {/* <div className="line"></div> */}
                         <span>Our Services</span>
                     </div>
                     <div className="empower">
