@@ -47,7 +47,7 @@ const AboutUs = () => {
       <div className="bio-mission">
         <h2 className="bio-title">Brif Bio, Mission & Vision</h2>
         <p className="bio-founder">
-          Founded by Temitope Omosebi Enoch and a passionate group <br /> of
+          Founby Temitope Omosebi Enoch and a passionate group <br /> of
           healthcare professionals, educators, and community leaders
         </p>
         <p className="bio-text">
