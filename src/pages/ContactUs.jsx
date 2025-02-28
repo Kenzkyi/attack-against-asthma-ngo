@@ -1,14 +1,10 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import '../style/ContactUs.css'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-import Success from '../components/Success'
 
 const ContactUs = () => {
   return (
-   <>
-     <div className='contact-us'>
+    <div className='contact-us'>
       <div className="contact-us-wrapper">
         <div className="contactus-left">
             <h6>Contact Us</h6>
@@ -25,9 +21,40 @@ const ContactUs = () => {
             <img src="/src/assets/map.png" />
         </a>
       </div>
+      <div className="contactus-input">
+        <div className="contactusinput-holder">
+          <nav>
+            <main>
+              <header>
+                <div>
+                <label htmlFor="">Your Full Name</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+                <div>
+                <label htmlFor="">Your Email Address</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+              </header>
+              <header>
+                <div>
+                <label htmlFor="">Your Phone Number</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+                <div>
+                <label htmlFor="">Message Subject</label>
+                <input type="text" placeholder='Type here'/>
+                </div>
+              </header>
+            </main>
+            <aside>
+              <label htmlFor="">Message Subject</label>
+              <textarea name="" id="" placeholder='Type here'></textarea>
+            </aside>
+            <button>Submit</button>
+          </nav>
+        </div>
+      </div>
     </div>
-    <Success/>
-   </>
   )
 }
 
