@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import "../style/Home.css"
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
@@ -9,7 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-// import { useNavigate } from "react-router-dom";
+import { navigate} from "react-router-dom";
 
 
 
@@ -17,7 +18,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 
 const Home = () => {
-  // Const navigate = useNavigate()
+
   const [dropDown, setDropDown] = useState(false)
 
   const toggleDropDown = () => {
@@ -41,13 +42,13 @@ const Home = () => {
         needs inhalers but cannot afford them, ensuring everyone has the chance <br />
         to breathe freely and live healthier lives.</p>
         <div className='Donatebuttonwrapper'>
-          <button className='Donatebutton' >Donate</button>
+          <button className='Donatebutton'>Donate</button>
           <div className='DonatebuttonApply' onClick={toggleDropDown}>Apply as 
               <span> { !dropDown ?  <IoIosArrowDown  size={20}/>: <IoIosArrowUp size={20} /> }</span></div>
               {dropDown && (
                 <div className='dropDown'>
-                  <h4>Asthetic Student</h4>
-                  <h4>Volunteer</h4>
+                  <h4 onClick={()=>navigate('/asthmatic-student')}>Asthetic Student</h4>
+                  <h4 onClick={()=>navigate('/volunteer')}>Volunteer</h4>
                 </div>
                 
               )}
@@ -72,7 +73,7 @@ const Home = () => {
              conomic marginalized groups in Nigeria to promote good health amon
              g the patients and reduce the risk of asthma, premature mortality and
               asthma communities.</h3>
-              <button className='Donatebutton2'>Donate</button>
+              <button className='Donatebutton'>Donate</button>
             </div>
           </div>
         </div>
@@ -89,7 +90,7 @@ const Home = () => {
              <div className='dive'> <FaRegCircle  style={{color: "orangered", fontSize: '18px'}}/>      To proffer free asthma medications to socioeconomically <br /> marginalized groups, communities and individuals in Nigeri.
              </div>
              <div className='dive'> <FaRegDotCircle  style={{color: "orangered", fontSize: '18px'}}/>      To improve access to healthcare among socioeconomically <br /> disadvantaged through awareness, free medication and health promotion activities.</div>
-             <button className='LearnMorebtn'>Learn More  <FaArrowRight /></button>
+             <button className='LearnMorebtn' onClick={()=>navigate('/about-us')}>Learn More  <FaArrowRight /></button>
             </div>
          </div>
          <div className='LeftImg'>
@@ -116,12 +117,12 @@ const Home = () => {
                 We want to organize free or low-cost asthma 
                 screenings in program tagged Attack-Against-Asthma by
                  donating 40 inhalers to asthmatic students in the 
-                 University of Ibadan. The team that'll carry out the 
+                 University of Ibadan. The team thatll carry out the 
                  program includes Obedina Ayomide, Saka Ayeni and some 
                  of our <span style={{color: "orangered", fontSize: '11px'}}>volunteers...</span>
 
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn'>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
@@ -140,7 +141,7 @@ const Home = () => {
                  
 
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn'>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
@@ -152,7 +153,7 @@ const Home = () => {
                 Research and Advocacy for Asthma-Friendly Policies.
                 </div>
                 <div className='box12'>
-                An advocacy project that'll focus on
+                An advocacy project that all focus on
                         influencing local governments and institutions to adopt policies that
                  will improve air quality. reduce pollution, and ensure better living conditions for asthma sufferers in 
                   <span style={{color: "orangered", fontSize: '11px'}}>Obafemi
@@ -161,7 +162,7 @@ const Home = () => {
                  
 
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn'>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
@@ -179,7 +180,7 @@ const Home = () => {
                 . This includes lobbying for better
                  access to affordable asthma medication.
                 </div>
-                <button className='LearnMorebtn1'>Learn More</button>
+                <button className='LearnMorebtn'>Learn More</button>
               </div>
             </div>
             
@@ -246,7 +247,7 @@ const Home = () => {
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
                 <h5>On the 22nd of September 2023, Temitope Omosebi initiated a health charity program tagged AttackAgainstAsthma by donating 40 inhalers to asthmatic students in the University of Ibadan. The team that carried the program included the above named individual and some
-                of our <span style={{color: "orangered", fontSize: '15px', textDecoration: "underline"}}> 
+                of our <span style={{color: "orangered", fontSize: '15px', textDecoration: "underline"}}>
                   VOLUNTEERS.</span></h5>
               </div>
               <div className='CardFooter'>
@@ -311,14 +312,14 @@ const Home = () => {
                 <h1>You Can Contribute To A Society That Is Asthma Aware
                    And Providing Inhalers For Asthmatic Student. </h1>
                   <div className='btnandselect'>
-                    <button className='Donatefooterbtn'>Donate</button>
+                    <button className='Donatefooterbtn' onClick={()=> navigate('/donate')}>Donate</button>
                     <div className="selectbtn" onClick={handleTgoggleDrop}>
                        Apply as 
                    <span> { !toggleDown ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp /> } </span> </div>
                    { toggleDown && (
                     <div className='Toggledrop2'>
-                      <h4>Asthmatic Students</h4>
-                       <h4>Volunteer</h4>
+                      <h4 onClick={()=>navigate('/asthmatic-student')}>Asthmatic Students</h4>
+                       <h4 onClick={()=>'/volunteer'}>Volunteer</h4>
                     </div>
                    )}
                   </div>

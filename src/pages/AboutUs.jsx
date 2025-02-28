@@ -5,6 +5,7 @@ import HeroVideo from "../assets/HeroVideo.png";
 import React from "react";
 import "../style/AboutUs.css";
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import HeroVideo from "../assets/HeroVideo.png";
 >>>>>>> 33554b8ba99b183bdb833139adbe84207593b0ab
 =======
@@ -12,6 +13,11 @@ import Team from "./Team";
 import AwardSection from "./AwardSection";
 import ContributionSection from "./ContributionSection";
 >>>>>>> a6daea1587ab71e09e2a35922ee6cbc45c786e15
+=======
+import Team from "./Team";
+import AwardSection from "./AwardSection";
+import ContributionSection from "./ContributionSection";
+>>>>>>> 137a7c5d100cc272a29c6387813a41c16f276030
 
 const AboutUs = () => {
   return (
