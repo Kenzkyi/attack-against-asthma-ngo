@@ -5,7 +5,7 @@ import PersonalInfo from '../components/PersonalInfo'
 import ChoosePayment from '../components/ChoosePayment'
 import { RiCheckboxBlankCircleLine, RiCheckboxCircleFill} from 'react-icons/ri'
 const Donate = () => {
-  // const [Amount, SetAmount] = useState()
+  // const [Amount, SetAmount] = useState()  
   const [page, setpage] = useState("Personal information")
   const [pageNum, setpageNum] = useState(0)
 
