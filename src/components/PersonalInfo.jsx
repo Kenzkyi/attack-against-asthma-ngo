@@ -6,7 +6,7 @@ const PersonalInfo = ({setpage}) => {
          Name: "",
          Number: "",
         Address: "",
-         Tnformation:"",
+        Information:"",
     });
 
       const handleChange = (e) => {
@@ -34,25 +34,29 @@ const PersonalInfo = ({setpage}) => {
       <div className='Body'>
      <div className='InputDiv'>Your full Name
         <input className='InputStyle' type="Text" placeholder='full Name'
+        name='Name'
             value={user. Name}
           onChange={handleChange} 
         />
      </div>
      <div className='InputDiv'>Your Phone Number
         <input className='InputStyle' type="Text" placeholder=' Phone Number' 
-          value={user. Number}
+        name='Number'
+          value={user.Number}
           onChange={handleChange} 
         />
      </div>
      <div className='InputDiv'>Address
         <input className='InputStyle' type="Text" placeholder='Address'
+        name='Address'
           value={user.Address}
           onChange={handleChange} 
         />
      </div>
-     <div className='InputDiv'>Additional Tnformation
-        <input className='InputStyle' type="Text" placeholder='Additional Tnformation' 
-          value={user.Tnformation }
+     <div className='InputDiv'>Additional Information
+        <input className='InputStyle' type="Text" placeholder='Additional Tnformation'
+        name='Information' 
+          value={user.Information }
           onChange={handleChange} 
         />
      </div>

@@ -7,9 +7,6 @@ import AsthmaticStudent from './pages/AsthmaticStudent'
 import Volunteer from './pages/Volunteer'
 import Donate from './pages/Donate'
 import MainHolder from './components/MainHolder'
-import ChoosePayment from './components/ChoosePayment'
-import PersonalInfo from './components/PersonalInfo'
-import SelectAmount from './components/SelectAmount'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -21,7 +18,7 @@ const App = () => {
     <HashRouter>
       <Header />
       <Routes>
-        <Route element={<Donate />}>
+        <Route element={<MainHolder />}>
           {/* <Route element={<PersonalInfo/>}> */}
           {/* <Route element={<SelectAmount/>}> */}
           {/* <Route element={<ChoosePayment/>}> */}
