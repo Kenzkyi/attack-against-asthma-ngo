@@ -32,10 +32,24 @@ h2{
     
 }
 
-h3{
+.word{
     padding: 10px;
     gap: 20px;
     cursor: pointer;
+}
+
+.word1{
+    padding: 10px;
+    gap: 20px;
+    /* cursor: pointer; */
+}
+
+.name1{
+  font-size: 25px;
+}
+
+.wrapname{
+    font-size: 25px;
 }
 
 p{
@@ -46,6 +60,7 @@ p{
 .inputwrap{
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 .btn{
@@ -91,6 +106,171 @@ p{
 }
 
 
+@media (max-width: 768px) {
+    .footernotifications {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        /* margin: 0 auto; */
+    }
+
+    .homeicon {
+        width: 16%;
+        height: auto;
+        margin-right: 30px;
+        /* margin-right: 0; */
+    }
+
+    .writeupcont {
+        width: 250%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 0;
+        margin-right: 20px;
+    }
+
+    .h2{
+        font-size: 3px;
+    }
+
+    .h3{
+        font-size: 2px;
+    }
+
+    .btn {
+        width: 30%;
+        margin: 10px auto;
+    }
+
+    .socialmediawrap {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+        /* align-items: center; */
+        margin-left: 0;
+        margin-top: 70px;
+        margin-left: 140px;
+        /* gap: 10px; */
+    }
+
+    .iconwrap {
+        /* width: 50px; */
+        width: 65%;
+        display: flex;
+        /* justify-content: space-around; */
+        gap: 1px;
+    }
+
+    .inputwrap{
+        display: none;
+    }
+
+    .name1{
+        display: none;
+    }
+
+    .word{
+        font-size: 13px;
+        /* cursor: none; */
+         /* width: 30px; */
+    }
 
 
 
+    .wrapname{
+        font-size: 13px;
+        margin-top: 70px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footernotifications {
+        width: 50%;
+        height: auto;
+        display: flex;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        gap: 2px;
+        /* margin: 0 auto; */
+    }
+
+    .homeicon {
+        width: 19%;
+        height: auto;
+        margin-right: 20px;
+        /* margin-right: 0; */
+    }
+
+    .writeupcont {
+        /* width: 80%; */
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 0;
+        margin-right: 20px;
+    }
+
+    .h2{
+        font-size: 3px;
+    }
+
+    .h3{
+        font-size: 2px;
+    }
+
+    .btn {
+        width: 30%;
+        margin: 10px auto;
+    }
+
+    .socialmediawrap {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+        /* align-items: center; */
+        margin-left: 0;
+        margin-top: 150px;
+        margin-left: 100px;
+        /* gap: 10px; */
+    }
+
+    .iconwrap {
+        /* width: 50px; */
+        width: 65%;
+        display: flex;
+        /* justify-content: space-around; */
+        gap: 1px;
+    }
+
+    .inputwrap{
+        display: none;
+    }
+
+    .name1{
+        display: none;
+    }
+
+    .word{
+        font-size: 13px;
+        /* cursor: none; */
+         /* width: 30px; */
+    }
+
+    .word1{
+        cursor: none;
+    }
+
+    .wrapname{
+        font-size: 13px;
+        margin-top: 70px;
+    }
+}
