@@ -3,26 +3,21 @@ import { FaCreditCard, FaUniversity } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import "../style/ChoosePayment.css"
 
-const ChoosePayment = () => {
+const ChoosePayment = ({setpage}) => {
     const [selectedMethod, setSelectedMethod] = useState('card');
   return (
-    <div>
-       <div className="container">
-      <div className="payment-container">
-        <div className="donation-image">
-          <img src="/src/assets/donate-second-pic.png" />
-        </div>
-        
+    <>
+    
         <div className="payment-form">
           <h1>Choose a payment Method</h1>
           
-          <div className="progress-indicators">
+          {/* <div className="progress-indicators">
             <div className="indicator"></div>
             <div className="indicator-line"></div>
             <div className="indicator"></div>
             <div className="indicator-line"></div>
             <div className="indicator"></div>
-          </div>
+          </div> */}
           
           <div className="payment-methods">
             <div 
@@ -71,12 +66,10 @@ const ChoosePayment = () => {
               </div>
             </div>
             
-            <button className="donate-button">Donate</button>
+            <button className="donate-button" onClick={()=> setpage("submit")}>Donate</button>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
+  </>
   )
 }
 
