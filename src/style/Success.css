@@ -1,0 +1,32 @@
+.success{
+    height: 100vh;
+    width: 100%;
+    background-color: #18181880;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    z-index: 100000;
+    align-items: center;
+}
+.success-holder{
+    height: 80vh;
+    width: 65%;
+    /* margin-top: 604px; */
+    border-radius: 20px;
+    background: linear-gradient(white,#125E64);
+    background: url('/src/assets/Success.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    nav{
+        height: 25vh;
+        width: 70%;
+        background-color: wheat;
+        margin-bottom: 60px;
+    }
+}
