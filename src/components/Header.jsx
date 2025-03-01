@@ -63,8 +63,8 @@ const Header = () => {
           {isOpen && ( 
             <div className="dropdown-menu">
               <ul style={{width: '160%'}}>
-                {/* <li onClick={handleASthmatic}>Asthmatic student</li> */}
-                {/* <li onClick={handleVolunteer}>Volunteer</li> */}
+                <li onClick={handleASthmatic}>Asthmatic student</li>
+                <li onClick={handleVolunteer}>Volunteer</li>
               </ul>
             </div>
           )}
