@@ -1,10 +1,12 @@
 import React from 'react'
 import '../style/ContactUs.css'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import Success from '../components/Success'
 
 const ContactUs = () => {
   return (
-    <div className='contact-us'>
+<>
+<div className='contact-us'>
       <div className="contact-us-wrapper">
         <div className="contactus-left">
             <h6>Contact Us</h6>
@@ -55,6 +57,8 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    <Success/>
+</>
   )
 }
 

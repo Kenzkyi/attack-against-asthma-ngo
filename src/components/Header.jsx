@@ -1,9 +1,8 @@
 import "../style/Header.css";
 import { useNavigate } from "react-router-dom";
+import pix from "../assets/public/logo1.png"
 import { useState } from "react";
-import pix from "../assets/logo1.png"
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

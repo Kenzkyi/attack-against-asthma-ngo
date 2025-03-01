@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../style/herostyle.css"
-import arrow from "../assets/arrow.png"
+import arrow from "../assets/public/arrow.png"
 
 const HeroPart = ({settingHeroPart}) => {
     const [hero, setHero] = useState(settingHeroPart || "asthmaticsStudent")
