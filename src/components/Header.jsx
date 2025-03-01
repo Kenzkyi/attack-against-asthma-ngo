@@ -1,6 +1,6 @@
 import "../style/Header.css";
 import { useNavigate } from "react-router-dom";
-import pix from "../assets/logo1.png"
+import pix from "../assets/public/logo1.png"
 
 const Header = () => {
   const navigate = useNavigate();

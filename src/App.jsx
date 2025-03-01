@@ -17,12 +17,12 @@ const App = () => {
       <Routes>
        <Route element={<MainHolder/>}>
        <Route path='' element={<Home/>}/>
-        <Route path='about-us' element={<AboutUs/>}/>
+        {/* <Route path='about-us' element={<AboutUs/>}/>
         <Route path='blog' element={<Blog/>}/>
         <Route path='contact-us' element={<ContactUs/>}/>
         <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>
         <Route path='volunteer' element={<Volunteer/>}/>
-        <Route path='donate' element={<Donate/>}/>
+        <Route path='donate' element={<Donate/>}/> */}
        </Route>
       </Routes>
     </HashRouter>

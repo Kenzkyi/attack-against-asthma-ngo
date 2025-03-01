@@ -20,7 +20,7 @@ body{
 .Firstbg{
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/home-first-pic.jpg);
+    background-image: url(../assets/public/home-first-pic.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -879,7 +879,7 @@ color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../assets/home-eleven-pic.jpg);
+    background-image: url(../assets/public/home-eleven-pic.jpg);
 }
 
 .downfooterdim{
