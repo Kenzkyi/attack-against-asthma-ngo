@@ -1,4 +1,4 @@
- import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Blog from './pages/Blog'
@@ -7,13 +7,19 @@ import AsthmaticStudent from './pages/AsthmaticStudent'
 import Volunteer from './pages/Volunteer'
 import Donate from './pages/Donate'
 import MainHolder from './components/MainHolder'
+import ChoosePayment from './components/ChoosePayment'
+import PersonalInfo from './components/PersonalInfo'
+import SelectAmount from './components/SelectAmount'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 const App = () => {
   return (
 
-    
+
     <HashRouter>
+      <Header />
       <Routes>
        <Route element={<MainHolder/>}>
        <Route path='' element={<Home/>}/>
@@ -25,6 +31,7 @@ const App = () => {
         <Route path='donate' element={<Donate/>}/> */}
        </Route>
       </Routes>
+      <Footer />
     </HashRouter>
   )
 }
