@@ -16,12 +16,8 @@ const App = () => {
 
 
     <HashRouter>
-      <Header />
       <Routes>
         <Route element={<MainHolder />}>
-          {/* <Route element={<PersonalInfo/>}> */}
-          {/* <Route element={<SelectAmount/>}> */}
-          {/* <Route element={<ChoosePayment/>}> */}
           <Route path='' element={<Home />} />
           <Route path='about-us' element={<AboutUs />} />
           <Route path='blog' element={<Blog />} />
@@ -30,8 +26,8 @@ const App = () => {
           <Route path='volunteer' element={<Volunteer />} />
           <Route path='donate' element={<Donate />} />
         </Route>
+
       </Routes>
-      <Footer />
     </HashRouter>
   )
 }
