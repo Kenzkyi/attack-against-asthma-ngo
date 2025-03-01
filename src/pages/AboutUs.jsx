@@ -1,3 +1,4 @@
+
 import React from "react";
 import "../style/AboutUs.css";
 import Team from "./Team";
@@ -70,8 +71,8 @@ const AboutUs = () => {
           effectively.
         </p>
         <p className="bio-text">
-          We work tirelessly to raise awareness about asthma's impact on
-          students' lives, ensuring that teachers, parents, and peers are
+          We work tirelessly to raise awareness about asthmas impact on
+          students lives, ensuring that teachers, parents, and peers are
           informed and ready to support. <br />
           Our asthma-friendly initiatives, like providing inhalers to schools
           and organizing community outreach programs, help create safer and

@@ -1,4 +1,3 @@
-import React from 'react'
 import ApplicationForm from '../components/ApplicationForm'
 import HeroPart from '../components/HeroPart'
 import "../style/Volunteer.css"
