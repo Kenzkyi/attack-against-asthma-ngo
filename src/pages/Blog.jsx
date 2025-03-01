@@ -1,4 +1,6 @@
-import "../style.Blog.css"
+import "../style/Blog.css"
+import blog1 from '../assets/public/home-fourth-pic.png'
+import blog2 from '../assets/public/blog-second-pic.png'
 
 const Blog = () => {
   return (
@@ -19,7 +21,7 @@ const Blog = () => {
          <div className='imagewrap'>
           <div className='imagewrap1'>
             <div className='img'>
-            <img src="src/assets/Frame 11.png" alt="" />
+            <img src={blog1}/>
             </div>
             <div className='textt'>
             <h1>
@@ -41,7 +43,7 @@ const Blog = () => {
           </div>
           <div className='imagewrap3'>
           <div className='img'>
-            <img src="src/assets/Frame 11.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -63,7 +65,7 @@ const Blog = () => {
           </div>
           <div className='imagewrap2'>
           <div className='img'>
-            <img src="src/assets/Frame 11.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -89,7 +91,7 @@ const Blog = () => {
     <div className='imagewrap'>
           <div className='imagewrap1'>
             <div className='img'>
-            <img src="src/assets/Frame 11.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -112,7 +114,7 @@ const Blog = () => {
 
           <div className='imagewrap3'>
           <div className='img'>
-            <img src="src/assets/Frame 11.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -135,7 +137,7 @@ const Blog = () => {
 
           <div className='imagewrap2'>
           <div className='img'>
-            <img src="src/assets/Frame 11.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -172,16 +174,12 @@ const Blog = () => {
      </div>
      <div className='bodywrapper1' >
   <div className='manshowing'>
-  <img src="src/assets/man-showing-healthy-apple-icon-couch 1.png" alt="" />
-
+  <img src={blog2} />
   </div>
      </div>
      </div>
 
-     <div className="content">
-    <div className="Imagewrap">
-    <img src="src/assets/man-showing-healthy-apple-icon-couch 1.png" alt="" />
-    </div>
+     <div className="content" style={{backgroundColor:'green'}}>
     <div className="Textwrap">
     <p>Health Tips</p>
       <h1>Herere 10 Things To Know As An <strong>Asthmatics</strong></h1>
@@ -193,10 +191,8 @@ const Blog = () => {
         <button className='mobileBtn'>Learn more</button>
     </div>
 </div>
-
-
    </div>
-   
+
   )
 }
 

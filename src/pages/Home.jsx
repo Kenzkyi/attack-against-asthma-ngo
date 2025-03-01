@@ -10,7 +10,23 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import home1 from "../assets/public/corner-flare.png"
 import home2 from '../assets/public/home-second-pic.jpg'
+import home3 from '../assets/public/home-third-pic.jpg'
+import home4 from '../assets/public/home-fourth-pic.png'
+import home5 from '../assets/public/home-fifth-pic.jpg'
+import home6 from '../assets/public/home-sixth-pic.jpg'
+import home7 from '../assets/public/home-seventh-pic.jpg'
+import home8 from '../assets/public/home-eight-pic.jpg'
+import home9 from '../assets/public/home-nine-pic.jpg'
+import home10 from '../assets/public/home-tenth-pic.jpg'
+import award1 from "../assets/public/home-patners/download 2.png"
+import award2 from "../assets/public/home-patners/download 3.png"
+import award3 from "../assets/public/home-patners/download 4.png"
+import award4 from "../assets/public/home-patners/download 5.png"
+import award5 from "../assets/public/home-patners/download 6.png"
+import award6 from "../assets/public/home-patners/download 7.png"
+import award7 from "../assets/public/home-patners/download 8.png"
 
 
 
@@ -33,7 +49,7 @@ const Home = () => {
   return (
     <div className='HomePageWrapper'>
       <div className='Firstbg'>
-        <img src="/src/assets/public/corner-flare.png" alt="" style={{ width: "100%"}}/>
+        <img src={home1} alt="" style={{ width: "100%"}}/>
         <div className='FirstbgColorDim'>
        <div className='FirstbgWriteup'>
        <span>Ensure healthy life and promote well being: Prevent premature mortality </span>
@@ -94,7 +110,7 @@ const Home = () => {
             </div>
          </div>
          <div className='LeftImg'>
-          <img src="src/assets/public/home-third-pic.jpg" alt=""  className='thirdimage'/>
+          <img src={home3} alt=""  className='thirdimage'/>
          </div>
         </div>
       </div>
@@ -107,7 +123,7 @@ const Home = () => {
            <div className='downsection'>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/public/home-fourth-pic.png" alt=""  className='imagebox1'/>
+                <img src={home4} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -127,7 +143,7 @@ const Home = () => {
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/public/home-fifth-pic.jpg" alt=""  className='imagebox1'/>
+                <img src={home5} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -146,7 +162,7 @@ const Home = () => {
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/public/home-sixth-pic.jpg" alt=""  className='imagebox1'/>
+                <img src={home6} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -167,7 +183,7 @@ const Home = () => {
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/public/home-seventh-pic.jpg" alt=""  className='imagebox1'/>
+                <img src={home7} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -195,25 +211,25 @@ const Home = () => {
           </div>
           <div className='partnerlog'>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 2.png" alt="" className='partnerslogos'/>
+              <img src={award1} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 3.png" alt="" className='partnerslogos'/>
+              <img src={award2} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 4.png" alt="" className='partnerslogos'/>
+              <img src={award3} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 5.png" alt="" className='partnerslogos'/>
+              <img src={award4} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 6.png" alt="" className='partnerslogos'/>
+              <img src={award5} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 7.png" alt="" className='partnerslogos'/>
+              <img src={award6} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/public/home-patners/download 8.png" alt="" className='partnerslogos'/>
+              <img src={award7} alt="" className='partnerslogos'/>
             </div>
           </div>
         </div>
@@ -226,7 +242,7 @@ const Home = () => {
           <div className='HWSODonations2'>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/public/home-eight-pic.jpg" alt=""  className='CardImfg' />
+                <img src={home8} alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
@@ -242,7 +258,7 @@ const Home = () => {
             </div>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/public/home-nine-pic.jpg" alt=""  className='CardImfg' />
+                <img src={home9} alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
@@ -259,7 +275,7 @@ const Home = () => {
             </div>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/public/home-tenth-pic.jpg" alt=""  className='CardImfg' />
+                <img src={home10} alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>

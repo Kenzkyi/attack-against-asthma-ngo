@@ -1,9 +1,9 @@
-
 import React from "react";
 import "../style/AboutUs.css";
 import Team from "./Team";
 import AwardSection from "./AwardSection";
 import ContributionSection from "./ContributionSection";
+import about1 from "../assets/public/aboutus-first-pic.png"
 
 const AboutUs = () => {
   return (
@@ -37,7 +37,7 @@ const AboutUs = () => {
       <div className="image-container">
         <div className="image-container-wrap">
           <img
-            src="/src/assets/aboutus-first-pic.png"
+            src={about1}
             alt="Team members of Attack Against Asthma"
             className="team-image2"
           />

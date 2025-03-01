@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaCreditCard, FaUniversity } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import "../style/ChoosePayment.css"
+import master from "../assets/public/master.jpg"
 
 const ChoosePayment = ({setpage}) => {
     const [selectedMethod, setSelectedMethod] = useState('card');
@@ -50,7 +51,7 @@ const ChoosePayment = ({setpage}) => {
               <label>Card Number</label>
               <div className="card-number-input">
                 <input type="text" placeholder="Type here" />
-                <img src="/src/assets/master.jpg"className='card-logo' />
+                <img src={master}className='card-logo' />
               </div>
             </div>
             

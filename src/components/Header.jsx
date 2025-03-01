@@ -20,9 +20,9 @@ const Header = () => {
     navigate("/contact-us")
   }
 
-  // const handleAbout=()=>{
-  //   navigate("/about-us")
-  // }
+  const handleAbout=()=>{
+    navigate("/about-us")
+  }
 
 
   const handleDonate=()=>{
@@ -45,7 +45,7 @@ const Header = () => {
       </div>
       <div className="headerwarp1">
         <h1 onClick={handleHome}>Home</h1>
-        <h1>About</h1>
+        <h1 onClick={handleAbout}>About</h1>
         <h1 onClick={handleBlog}>Blog</h1>
         <h1 onClick={handleContact}>Contact-us</h1>
       </div>

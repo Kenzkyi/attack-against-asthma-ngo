@@ -5,6 +5,7 @@ import SelectAmount from '../components/SelectAmount'
 import PersonalInfo from '../components/PersonalInfo'
 import ChoosePayment from '../components/ChoosePayment'
 import { RiCheckboxBlankCircleLine, RiCheckboxCircleFill, RiCheckboxCircleLine } from 'react-icons/ri'
+import donate1 from '../assets/public/donate-second-pic.png'
 const Donate = () => {
   // const [Amount, SetAmount] = useState()
   const [page, setpage] = useState("Personal information")
@@ -43,7 +44,7 @@ const Donate = () => {
       <div className='SelectAmount'>
         <div className='RightDiv'>
           <div className='ImgDiv'>
-            <img className='Img' src='src/assets/donate-second-pic.png' />
+            <img className='Img' src={donate1} />
           </div>
         </div>
         <div className='leftside2'>

@@ -2,6 +2,7 @@ import React from 'react'
 import '../style/ContactUs.css'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import Success from '../components/Success'
+import map from "../assets/public/map.png"
 
 const ContactUs = () => {
   return (
@@ -20,7 +21,7 @@ const ContactUs = () => {
             </nav>
         </div>
         <a href='https://maps.app.goo.gl/r7X7p9zsf5Vq1y6f9' className="contactus-right">
-            <img src="/src/assets/map.png" />
+            <img src={map} />
         </a>
       </div>
       <div className="contactus-input">
@@ -57,7 +58,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
-    <Success/>
+    {/* <Success/> */}
 </>
   )
 }
