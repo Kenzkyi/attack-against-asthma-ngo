@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-=======
+
 import React from 'react'
->>>>>>> 33554b8ba99b183bdb833139adbe84207593b0ab
 import '../style/ContactUs.css'
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons'
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import Success from '../components/Success'
 
 const ContactUs = () => {
   return (
-    <div className='contact-us'>
+<>
+<div className='contact-us'>
       <div className="contact-us-wrapper">
         <div className="contactus-left">
             <h6>Contact Us</h6>
@@ -60,6 +58,8 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    <Success/>
+</>
   )
 }
 

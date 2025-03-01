@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div className='HomePageWrapper'>
       <div className='Firstbg'>
-        <img src="src/assets/corner-flare.png" alt="" style={{ width: "100%"}}/>
+        <img src="src/assets/public/corner-flare.png" alt="" style={{ width: "100%"}}/>
         <div className='FirstbgColorDim'>
        <div className='FirstbgWriteup'>
        <span>Ensure healthy life and promote well being: Prevent premature mortality </span>
@@ -63,7 +63,7 @@ const Home = () => {
       <div className='Seconddiv'>
         <div className='SeconddivWrapper'>
           <div className='ImageHolder'>
-            <img src="src/assets/home-second-pic.jpg" alt=""  className='Image2'/>
+            <img src="src/assets/public/home-second-pic.jpg" alt=""  className='Image2'/>
           </div>
           <div className='TextwrapperSeconddiv'>
             <div className='textright'>
@@ -94,7 +94,7 @@ const Home = () => {
             </div>
          </div>
          <div className='LeftImg'>
-          <img src="src/assets/home-third-pic.jpg" alt=""  className='thirdimage'/>
+          <img src="src/assets/public/home-third-pic.jpg" alt=""  className='thirdimage'/>
          </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ const Home = () => {
            <div className='downsection'>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-fourth-pic.png" alt=""  className='imagebox1'/>
+                <img src="src/assets/public/home-fourth-pic.png" alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -127,7 +127,7 @@ const Home = () => {
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-fifth-pic.jpg" alt=""  className='imagebox1'/>
+                <img src="src/assets/public/home-fifth-pic.jpg" alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -146,7 +146,7 @@ const Home = () => {
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-sixth-pic.jpg" alt=""  className='imagebox1'/>
+                <img src="src/assets/public/home-sixth-pic.jpg" alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -167,7 +167,7 @@ const Home = () => {
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-seventh-pic.jpg" alt=""  className='imagebox1'/>
+                <img src="src/assets/public/home-seventh-pic.jpg" alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -195,25 +195,25 @@ const Home = () => {
           </div>
           <div className='partnerlog'>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 2.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 2.png" alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 3.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 3.png" alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 4.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 4.png" alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 5.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 5.png" alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 6.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 6.png" alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 7.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 7.png" alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 8.png" alt="" className='partnerslogos'/>
+              <img src="src/assets/public/home-patners/download 8.png" alt="" className='partnerslogos'/>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ const Home = () => {
           <div className='HWSODonations2'>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/home-eight-pic.jpg" alt=""  className='CardImfg' />
+                <img src="src/assets/public/home-eight-pic.jpg" alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
@@ -242,7 +242,7 @@ const Home = () => {
             </div>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/home-nine-pic.jpg" alt=""  className='CardImfg' />
+                <img src="src/assets/public/home-nine-pic.jpg" alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
