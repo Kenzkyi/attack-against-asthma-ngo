@@ -1,7 +1,7 @@
    .heroPart {
        width: 100%;
        height: 670px;
-       background: url("../assets/hero.png");
+       background: url("../assets/public/hero.png");
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
@@ -103,7 +103,7 @@
        height: 100%;
        background-color: rgba(0, 0, 255, 0.452);
        float: right;
-       background: url("../assets/asthmatic-page.png");
+       background: url("../assets/public/asthmatic-page.png");
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
@@ -115,7 +115,7 @@
     height: 100%;
     background-color: rgba(0, 0, 255, 0.452);
     float: right;
-    background: url("../assets/voluteer-page.png");
+    background: url("../assets/public/voluteer-page.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
