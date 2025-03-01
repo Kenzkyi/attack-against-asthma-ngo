@@ -258,7 +258,7 @@ const Home = () => {
             </div>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/home-tenth-pic.jpg" alt=""  className='CardImfg' />
+                <img src="src/assets/public/home-tenth-pic.jpg" alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>

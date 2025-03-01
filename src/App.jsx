@@ -19,7 +19,6 @@ const App = () => {
 
 
     <HashRouter>
-      <Header />
       <Routes>
        <Route element={<MainHolder/>}>
        <Route path='' element={<Home/>}/>
@@ -31,7 +30,6 @@ const App = () => {
         <Route path='donate' element={<Donate/>}/> */}
        </Route>
       </Routes>
-      <Footer />
     </HashRouter>
   )
 }
