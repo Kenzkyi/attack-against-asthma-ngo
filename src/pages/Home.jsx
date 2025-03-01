@@ -10,6 +10,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import home2 from '../assets/public/home-second-pic.jpg'
 
 
 
@@ -32,7 +33,7 @@ const Home = () => {
   return (
     <div className='HomePageWrapper'>
       <div className='Firstbg'>
-        <img src="src/assets/public/corner-flare.png" alt="" style={{ width: "100%"}}/>
+        <img src="/src/assets/public/corner-flare.png" alt="" style={{ width: "100%"}}/>
         <div className='FirstbgColorDim'>
        <div className='FirstbgWriteup'>
        <span>Ensure healthy life and promote well being: Prevent premature mortality </span>
@@ -62,7 +63,7 @@ const Home = () => {
       <div className='Seconddiv'>
         <div className='SeconddivWrapper'>
           <div className='ImageHolder'>
-            <img src="src/assets/public/home-second-pic.jpg" alt=""  className='Image2'/>
+            <img src={home2} alt=""  className='Image2'/>
           </div>
           <div className='TextwrapperSeconddiv'>
             <div className='textright'>
