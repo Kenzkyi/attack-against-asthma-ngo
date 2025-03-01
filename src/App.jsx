@@ -7,9 +7,6 @@ import AsthmaticStudent from './pages/AsthmaticStudent'
 import Volunteer from './pages/Volunteer'
 import Donate from './pages/Donate'
 import MainHolder from './components/MainHolder'
-import ChoosePayment from './components/ChoosePayment'
-import PersonalInfo from './components/PersonalInfo'
-import SelectAmount from './components/SelectAmount'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -20,15 +17,16 @@ const App = () => {
 
     <HashRouter>
       <Routes>
-       <Route element={<MainHolder/>}>
-       <Route path='' element={<Home/>}/>
-        {/* <Route path='about-us' element={<AboutUs/>}/>
-        <Route path='blog' element={<Blog/>}/>
-        <Route path='contact-us' element={<ContactUs/>}/>
-        <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>
-        <Route path='volunteer' element={<Volunteer/>}/>
-        <Route path='donate' element={<Donate/>}/> */}
-       </Route>
+        <Route element={<MainHolder />}>
+          <Route path='' element={<Home />} />
+          <Route path='about-us' element={<AboutUs />} />
+          <Route path='blog' element={<Blog />} />
+          <Route path='contact-us' element={<ContactUs />} />
+          <Route path='asthmatic-student' element={<AsthmaticStudent />} />
+          <Route path='volunteer' element={<Volunteer />} />
+          <Route path='donate' element={<Donate />} />
+        </Route>
+
       </Routes>
     </HashRouter>
   )
