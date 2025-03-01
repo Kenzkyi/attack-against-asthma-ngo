@@ -66,7 +66,7 @@ const ChoosePayment = ({setpage}) => {
               </div>
             </div>
             
-            <button className="donate-button" onClick={()=> setpage("submit")}>Donate</button>
+            <button className="donate-button" onClick={()=> setpage("Success")}>Donate</button>
           </div>
         </div>
   </>
