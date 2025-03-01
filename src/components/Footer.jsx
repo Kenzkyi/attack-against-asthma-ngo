@@ -44,30 +44,30 @@ function Footer(){
                 
                 <div className="writeupcont">
                 <div className="">
-                    <h2 className="wrapname">Quick links</h2>
-                    <h3 className="word" onClick={handleHome} >Home</h3>
-                    <h3 className="word">About Us</h3>
-                    <h3 className="word"onClick={handleContact}>Contact Us</h3>
-                    <h3 className="word" onClick={handleBlog}>Blog</h3>
+                    <h2>Quick links</h2>
+                    <h3 onClick={handleHome}>Home</h3>
+                    <h3>About Us</h3>
+                    <h3 onClick={handleContact}>Contact Us</h3>
+                    <h3 onClick={handleBlog}>Blog</h3>
                 </div>
 
                 <div>
-                    <h2 className="wrapname">Quick links</h2>
-                    <p className="word1">Donate</p>
-                    <p className="word1">Apply now</p>
-                    <p className="word1">Events</p>
-                    <p className="word1">Projects</p>
+                    <h2>Quick links</h2>
+                    <p>Donate</p>
+                    <p>Apply now</p>
+                    <p>Events</p>
+                    <p>Projects</p>
                 </div>
 
                 <div>
-                    <h2 className="wrapname">Contact info</h2>
-                    <p className="word1">+238121530907</p>
-                    <p className="word1"> attackagainstasthma@gmail.com</p>
-                    <p className="word1">Privacy policy</p>
+                    <h2>Contact info</h2>
+                    <p>+238121530907</p>
+                    <p>attackagainstasthma@gmail.com</p>
+                    <p>Privacy policy</p>
                 </div>
 
                 <div>
-                    <h1 className="name1">Subscribe to get our latest updates</h1>
+                    <h2>Subscribe to get our latest updates</h2>
 
                     <div className="inputwrap">
                    <input type="text" placeholder="enter your email address" style={{width: "100%", height: "50px", 
