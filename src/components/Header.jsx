@@ -1,8 +1,11 @@
 import "../style/Header.css";
 import { useNavigate } from "react-router-dom";
-import pix from "../assets/logo1.png"
+import pix from "../assets/public/logo1.png"
+import { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleHome=()=>{
@@ -47,10 +50,29 @@ const Header = () => {
         <h1 onClick={handleContact}>Contact-us</h1>
       </div>
       <div className="headerwarp2">
-          <select name="Apply As" id="" className="dropwrap">
+
+      <div className="dropdown">
+          <h1 className="dropdown-header">
+            Apply As
+            <span onClick={() => setIsOpen(!isOpen)} className="icon">
+              {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </span>
+          </h1>
+
+         
+          {isOpen && ( 
+            <div className="dropdown-menu">
+              <ul style={{width: '160%'}}>
+                <li onClick={handleASthmatic}>Asthmatic student</li>
+                <li onClick={handleVolunteer}>Volunteer</li>
+              </ul>
+            </div>
+          )}
+        </div>
+          {/* <select name="Apply As" id="" className="dropwrap">
             <option value="" className="dropdowntext" onClick={handleASthmatic}>Asthmatic student</option>
             <option value=""  className="dropdowntext" onClick={ handleVolunteer}>Volunteer</option>
-          </select>
+          </select> */}
         
         <button className="buttonwrap" onClick={handleDonate}>Donate</button>
       </div>

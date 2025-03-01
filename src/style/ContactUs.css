@@ -128,7 +128,7 @@
             height: 201px;
             /* background-color: red; */
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             gap: 37px;
 
             header{
