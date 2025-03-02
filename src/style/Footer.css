@@ -23,13 +23,18 @@
     width: 80%;
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 60px;
     margin-top: 90px;
 }
 
 h2{
     margin-bottom: 60px;
     
+}
+
+.h3{
+    gap: 30px;
+    margin-bottom: 20px;
 }
 
 .word{
@@ -108,7 +113,7 @@ p{
 
 @media (max-width: 768px) {
     .footernotifications {
-        width: 50%;
+        /* width: 90%; */
         height: auto;
         display: flex;
         justify-content: space-between;
@@ -125,7 +130,7 @@ p{
     }
 
     .writeupcont {
-        width: 250%;
+        width: 25%;
         display: flex;
         justify-content: space-between;
         gap: 10px;
@@ -134,11 +139,11 @@ p{
     }
 
     .h2{
-        font-size: 3px;
+        font-size: 17px;
     }
 
     .h3{
-        font-size: 2px;
+        font-size: 15px;
     }
 
     .btn {
@@ -193,8 +198,9 @@ p{
 @media (max-width: 480px) {
     .footernotifications {
         width: 50%;
-        height: auto;
-        display: flex;
+        /* background-color: black; */
+        /* height: auto;
+        display: flex; */
         /* justify-content: space-around; */
         /* align-items: center; */
         gap: 2px;
@@ -209,21 +215,21 @@ p{
     }
 
     .writeupcont {
-        /* width: 80%; */
-        display: flex;
+        width: 100%;
+        /* display: flex;
         justify-content: space-between;
         gap: 10px;
         margin-top: 0;
-        margin-right: 20px;
+        margin-right: 20px; */
     }
 
-    .h2{
+    /* .h2{
         font-size: 3px;
-    }
+    } */
 
-    .h3{
+    /* .h3{
         font-size: 2px;
-    }
+    } */
 
     .btn {
         width: 30%;
@@ -231,16 +237,11 @@ p{
     }
 
     .socialmediawrap {
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 30px;
-        /* align-items: center; */
-        margin-left: 0;
-        margin-top: 150px;
-        margin-left: 100px;
-        /* gap: 10px; */
+       width: 80%;
+       margin: 0;
+       margin-right: 50px;
+       background-color: aqua;
+        
     }
 
     .iconwrap {
@@ -256,21 +257,25 @@ p{
     }
 
     .name1{
-        display: none;
+        display: block;
+        font-size: 13px;
+       gap: none;
     }
 
     .word{
         font-size: 13px;
+        margin-bottom: 10px;
+        display: block;
         /* cursor: none; */
          /* width: 30px; */
     }
 
     .word1{
-        cursor: none;
+       display: none;
     }
 
     .wrapname{
-        font-size: 13px;
-        margin-top: 70px;
+        font-size: 12px;
+        /* margin-top: 70px; */
     }
 }
