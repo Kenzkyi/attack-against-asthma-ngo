@@ -77,7 +77,7 @@ function Footer(){
 
             
             <div className="socialmediawrap">
-                <h3>Copyright 2025 attackagainstasthma</h3>
+                <h3 className="copy">Copyright 2025 attackagainstasthma</h3>
 
                 <div className="iconwrap">
                     <img src={pix1} alt="" className="mediaicon"/>
