@@ -73,6 +73,7 @@ const ChoosePayment = () => {
           </div>
         </div>
         {isSuccess && <Success/>}
+        
   </>
   )
 }
