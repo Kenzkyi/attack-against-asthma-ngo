@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import pix from "../assets/public/logo1.png";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-// import { CiMenuBurger } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GoHome } from "react-icons/go";
 import { GrGroup } from "react-icons/gr";
@@ -67,7 +66,7 @@ const Header = () => {
       {menuVisible && (
         <div className="menubar1">
           <ul className="bugtextwrap">
-            <li className="bugtext">
+            <li className="bugtext" onClick={handleHome}>
               <span><GoHome /></span> Home
             </li>
             <li className="bugtext" onClick={handleAbout}>
@@ -119,11 +118,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        {/* <select name="Apply As" id="" className="dropwrap">
-            <option value="" className="dropdowntext" onClick={handleASthmatic}>Asthmatic student</option>
-            <option value=""  className="dropdowntext" onClick={ handleVolunteer}>Volunteer</option>
-          </select> */}
-
+        
         <button className="buttonwrap" onClick={handleDonate}>
           Donate
         </button>
