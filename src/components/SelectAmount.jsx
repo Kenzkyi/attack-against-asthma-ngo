@@ -29,7 +29,7 @@ const SelectAmount = ({setpage}) => {
                 </div>
             </div>
             <div className='Body3'>
-                <div className='Button2' onClick={()=>setpage("Choose payment")}> Comfirm Amount</div>
+                <div className='Button2' onClick={()=> setpage("Submit")}> Comfirm Amount</div>
             </div>
         </>
     )
