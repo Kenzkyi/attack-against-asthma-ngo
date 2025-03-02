@@ -14,9 +14,9 @@ function Footer(){
       navigate("/")
     }
   
-    // const handleAbout=()=>{
-    //   navigate("/about-us")
-    // }
+    const handleAbout=()=>{
+      navigate("/about-us")
+    }
   
     const handleBlog=()=>{
       navigate("/blog")
@@ -39,30 +39,30 @@ function Footer(){
                 
                 <div className="writeupcont">
                 <div className="">
-                    <h2>Quick links</h2>
-                    <h3 onClick={handleHome}>Home</h3>
-                    <h3>About Us</h3>
-                    <h3 onClick={handleContact}>Contact Us</h3>
-                    <h3 onClick={handleBlog}>Blog</h3>
+                    <h2 className="wrapname">Quick links</h2>
+                    <h3 className="word" onClick={handleHome}>Home</h3>
+                    <h3 className="word" onClick={handleAbout}>About Us</h3>
+                    <h3 className="word" onClick={handleContact}>Contact Us</h3>
+                    <h3 className="word" onClick={handleBlog}>Blog</h3>
                 </div>
 
                 <div>
-                    <h2>Quick links</h2>
-                    <p>Donate</p>
-                    <p>Apply now</p>
-                    <p>Events</p>
-                    <p>Projects</p>
+                    <h2 className="wrapname">Quick links</h2>
+                    <p className="name1">Donate</p>
+                    <p className="name1">Apply now</p>
+                    <p className="name1">Events</p>
+                    <p className="name1">Projects</p>
                 </div>
 
                 <div>
-                    <h2>Contact info</h2>
-                    <p>+238121530907</p>
-                    <p>attackagainstasthma@gmail.com</p>
-                    <p>Privacy policy</p>
+                    <h2 className="wrapname">Contact info</h2>
+                    <p className="name1">+238121530907</p>
+                    <p className="name1">attackagainstasthma@gmail.com</p>
+                    <p className="name1">Privacy policy</p>
                 </div>
 
                 <div>
-                    <h2>Subscribe to get our latest updates</h2>
+                    <h2 className="word1">Subscribe to get our latest updates</h2>
 
                     <div className="inputwrap">
                    <input type="text" placeholder="enter your email address" style={{width: "100%", height: "50px", 
