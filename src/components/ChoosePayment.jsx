@@ -2,27 +2,25 @@ import React, { useState } from 'react';
 import { FaCreditCard, FaUniversity } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import "../style/ChoosePayment.css"
+import master from "../assets/public/master.jpg"
+import Success from './Success';
 
 const ChoosePayment = () => {
     const [selectedMethod, setSelectedMethod] = useState('card');
+      const [isSuccess,setIsSuccess] = useState(false)
   return (
-    <div>
-       <div className="container">
-      <div className="payment-container">
-        <div className="donation-image">
-          <img src="/src/assets/donate-second-pic.png" />
-        </div>
-        
+    <>
+    
         <div className="payment-form">
           <h1>Choose a payment Method</h1>
           
-          <div className="progress-indicators">
+          {/* <div className="progress-indicators">
             <div className="indicator"></div>
             <div className="indicator-line"></div>
             <div className="indicator"></div>
             <div className="indicator-line"></div>
             <div className="indicator"></div>
-          </div>
+          </div> */}
           
           <div className="payment-methods">
             <div 
@@ -55,7 +53,7 @@ const ChoosePayment = () => {
               <label>Card Number</label>
               <div className="card-number-input">
                 <input type="text" placeholder="Type here" />
-                <img src="/src/assets/master.jpg"className='card-logo' />
+                <img src={master}className='card-logo' />
               </div>
             </div>
             
@@ -71,12 +69,12 @@ const ChoosePayment = () => {
               </div>
             </div>
             
-            <button className="donate-button">Donate</button>
+            <button className="donate-button" onClick={()=> setIsSuccess(true)}>Donate</button>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
+        {isSuccess && <Success/>}
+        
+  </>
   )
 }
 

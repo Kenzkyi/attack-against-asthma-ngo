@@ -7,8 +7,35 @@
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    position: fixed;
+    position: sticky;
     z-index: 1000;
+    top: 0;
+}
+
+.bug1{
+  display: none;
+  width: 100px;
+  position: relative;
+}
+
+.bugtextwrap{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.bugtext{
+  list-style: none;
+  font-size: 23px;
+}
+
+.menubar1{
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  background-color: white;
 }
 
 .headerwarp {
@@ -91,33 +118,242 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
- 
-  .dropwrap{
-    width: 50%;
-    height: 70%;
+
+  .dropdown1{
+    width: 42%;
+    height: 45px;
     border: 1px solid brown;
-    outline: none;
+    border-radius: 5px;
+    display: flex;
+   
+    justify-content: space-between;
+
+  }
+
+  .icon{
+    margin-left: 53px;
+    margin-top: 20px;
+  }
+  
+  .dropdown1-header {
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: space-between;
+    gap: 35px;
+    font-size: 15px;
+  }
+  
+  .dropdown1-menu {
+    position: absolute;
+    min-width: 170px;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px 0;
+    display: block;
+    z-index: 10;
+  }
+
+  .dropdown1-menu.show {
+    display: block;
+  }
+  
+  .dropdown1-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown1-menu li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
     font-size: 15px;
     font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+
+
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+      height: 15vh;
+      width: 100%;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 2px;
+  }
+
+  .bug1{
+    display: block;
+  }
+
+  .bugtext{
+    font-size: 14px;
+  }
+
+  .menubar1{
+    height: 270px;
+    width: 220px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  img{
+    width: 100px;
+  }
+
+  .headerwarp{
+    width: 150px;
+    height: 70px;
+  }
+
+  
+
+  .headerwarp1 {
+    display: none;
+      
+  }
+
+  .headerwarp2 {
+    display: none;
     
+  }
+
+  .icon {
+      margin-left: 10px;
+  }
+
+  .buttonwrap {
+      width: 50px;
+      height: 30px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  
+
+  
+}
+
+@media (max-width: 480px) {
+  .header {
+      height: 15vh;
+      width: 100%;
+      padding: 0 10px;
+      justify-content: space-between;
+      gap: 2px;
+      background-color: whitesmoke;
+  }
+
+  .headerwarp1{
+    display: none;
     
+
+  }
+
+  img{
+    width: 50px;
+  }
+
+  .bug1{
+    display: block;
+    cursor: pointer;
+   
+  }
+  
+  .menubar1{
+    height: 330px;
+    width: 220px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .bugtext{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+
+  }
+
+  .bugtext:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+  }
+
+  .dropdown-menu{
+    width: 10%;
+    left: 0;
+    height: 100px;
+    margin-right: 60px;
+  }
+
+  .dropdown{
+    width: 110px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .dropdown-header{
+    width: 190px;
+    font-size: 13px;
+  }
+
+  .headerwarp {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+
+      & img {
+          height: 40%;
+          width: 100%;
+      }
+  }
+
+  .headerwarp1 {
+      width: 50%;
+      justify-content: space-evenly;
+      
+      & h1 {
+          font-size: 14px;
+      }
+  }
+
+  .headerwarp2 {
+    display: none;
+
+  }
+
+  .icon {
+      margin-left: 10px;
+  }
+
+  .buttonwrap {
+      width: 50px;
+      height: 30px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  
 }
 
-.dropwrap:hover{
-  cursor: pointer;
-}
 
-.dropdowntext{
-  background-color: white;
-  color: black;
-  font-size: 14px;
-  font-weight: bolder;
-  cursor: pointer;
-}
 
-.dropdowntext:hover{
-  color: darkcyan;
-  cursor: pointer;
-}
+

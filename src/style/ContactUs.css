@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .contact-us{
     height: max-content;
     width: 100%;
     background-color: #F2FFF9;
+    overflow: hidden;
 }
 .contact-us-wrapper{
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     background-color: white;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     gap: 33px;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column-reverse;
+        height: max-content;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
 }
 .contactus-left{
     height: 275px;
@@ -57,8 +66,19 @@
             /* cursor: pointer; */
         }
     }
+    @media screen and (max-width:768px) {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    @media screen and (max-width:480px) {
+        h5{
+            font-size: 25px;
+        }
+    }
 }
 .contactus-right{
+    /* display: block; */
     height: 538px;
     width: 45%;
     /* background-color: green; */
@@ -69,5 +89,120 @@
         height: 100%;
         width: 100%;
 
+    }
+
+    @media screen and (max-width:768px) {
+        width: 90%;
+    }
+}
+.contactus-input{
+    height: 811px;
+    width: 100%;
+    color: #F2FFF9;
+    display: flex;
+    justify-content: center;
+}
+.contactusinput-holder{
+    margin-top: 42px;
+    /* margin-left: 76px; */
+    border-radius: 28.45px;
+    height: 682px;
+    width: 92%;
+    background-color: white;
+    /* box-shadow: 4 4 4 00000; */
+    padding-top: 97px;
+    display: flex;
+    justify-content: center;
+
+    nav{
+        width: 89%;
+        /* width: 1150px; */
+        height: 543px;
+        /* margin-left: 69px; */
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 29px;
+
+        main{
+            width: 100%;
+            height: 201px;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 37px;
+
+            header{
+                height: 82px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                div{
+                    width: 45%;
+                    height: 100%;
+                    /* background-color: green; */
+
+                    label{
+                        height: 18px;
+                        width: 100%;
+                        font-size: 12px;
+                        font-weight: 600;
+                        font-family: "Noto Sans", serif;
+                        color: #7C8B9D;
+                    }
+
+                    input{
+                        outline: none;
+                        border: 1px solid gainsboro;
+                        padding: 16px;
+                        width: 100%;
+                        border-radius: 8px;
+                        height: 56px;
+                    }
+                }
+            }
+        }
+        
+        aside{
+            width: 100%;
+            height: 244px;
+            /* background-color: lightgray; */
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            label{
+                height: 18px;
+                width: 100%;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: "Noto Sans", serif;
+                color: #7C8B9D;
+            }
+
+            textarea{
+                height: 218px;
+                width: 100%;
+                border-radius: 8px;
+                border: 1px solid gainsboro;
+                padding: 16px;
+
+            }
+        }
+
+        button{
+            width: 93px;
+            height: 40px;
+            border-radius: 4px;
+            padding: 10px 16px 10px 16px;
+            background-color: #125E64;
+            color: white;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+            
+        }
     }
 }

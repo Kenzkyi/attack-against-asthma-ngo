@@ -3,6 +3,7 @@ import "../style/AboutUs.css";
 import Team from "./Team";
 import AwardSection from "./AwardSection";
 import ContributionSection from "./ContributionSection";
+import about1 from "../assets/public/aboutus-first-pic.png"
 
 const AboutUs = () => {
   return (
@@ -36,7 +37,7 @@ const AboutUs = () => {
       <div className="image-container">
         <div className="image-container-wrap">
           <img
-            src="/src/assets/aboutus-first-pic.png"
+            src={about1}
             alt="Team members of Attack Against Asthma"
             className="team-image2"
           />
@@ -70,8 +71,8 @@ const AboutUs = () => {
           effectively.
         </p>
         <p className="bio-text">
-          We work tirelessly to raise awareness about asthma's impact on
-          students' lives, ensuring that teachers, parents, and peers are
+          We work tirelessly to raise awareness about asthmas impact on
+          students lives, ensuring that teachers, parents, and peers are
           informed and ready to support. <br />
           Our asthma-friendly initiatives, like providing inhalers to schools
           and organizing community outreach programs, help create safer and

@@ -9,7 +9,24 @@ import { FaFacebook } from "react-icons/fa";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-// import homesecondpic from "src/assets/home-second-pic.jpg"
+import { useNavigate } from "react-router-dom";
+import home1 from "../assets/public/corner-flare.png"
+import home2 from '../assets/public/home-second-pic.jpg'
+import home3 from '../assets/public/home-third-pic.jpg'
+import home4 from '../assets/public/home-fourth-pic.png'
+import home5 from '../assets/public/home-fifth-pic.jpg'
+import home6 from '../assets/public/home-sixth-pic.jpg'
+import home7 from '../assets/public/home-seventh-pic.jpg'
+import home8 from '../assets/public/home-eight-pic.jpg'
+import home9 from '../assets/public/home-nine-pic.jpg'
+import home10 from '../assets/public/home-tenth-pic.jpg'
+import award1 from "../assets/public/home-patners/download 2.png"
+import award2 from "../assets/public/home-patners/download 3.png"
+import award3 from "../assets/public/home-patners/download 4.png"
+import award4 from "../assets/public/home-patners/download 5.png"
+import award5 from "../assets/public/home-patners/download 6.png"
+import award6 from "../assets/public/home-patners/download 7.png"
+import award7 from "../assets/public/home-patners/download 8.png"
 
 
 
@@ -17,7 +34,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 
 const Home = () => {
-
+  const navigate = useNavigate()
   const [dropDown, setDropDown] = useState(false)
 
   const toggleDropDown = () => {
@@ -32,22 +49,22 @@ const Home = () => {
   return (
     <div className='HomePageWrapper'>
       <div className='Firstbg'>
-        <img src="src/assets/corner-flare.png" alt="" style={{ width: "800px"}}/>
+        <img src={home1} alt="" style={{ width: "100%"}}/>
         <div className='FirstbgColorDim'>
        <div className='FirstbgWriteup'>
        <span>Ensure healthy life and promote well being: Prevent premature mortality </span>
-       <h2>Breathing Easier, One <span style={{color: "orangered", fontSize: '32px'}}>Inhaler </span> <br />At A Time</h2>
-       <p> <span style={{color: "orangered", fontSize: '18px'}}> #attackagainstasthma</span> is dedicated to bridging the gap for individuals who <br />
+       <h2>Breathing Easier, One <b style={{color: "orangered",}} className="spnheader">Inhaler </b> <br />At A Time</h2>
+       <p> <span className="attackagainstCancerText" > #attackagainstasthma</span> is dedicated to bridging the gap for individuals who <br />
         needs inhalers but cannot afford them, ensuring everyone has the chance <br />
         to breathe freely and live healthier lives.</p>
         <div className='Donatebuttonwrapper'>
-          <button className='Donatebutton'>Donate</button>
+          <button className='Donatebutton' onClick={()=>navigate('/donate')}>Donate</button>
           <div className='DonatebuttonApply' onClick={toggleDropDown}>Apply as 
               <span> { !dropDown ?  <IoIosArrowDown  size={20}/>: <IoIosArrowUp size={20} /> }</span></div>
               {dropDown && (
                 <div className='dropDown'>
-                  <h4>Asthetic Student</h4>
-                  <h4>Volunteer</h4>
+                  <h4 onClick={()=>navigate('/asthmatic-student')}>Asthetic Student</h4>
+                  <h4 onClick={()=>navigate('/volunteer')}>Volunteer</h4>
                 </div>
                 
               )}
@@ -62,17 +79,17 @@ const Home = () => {
       <div className='Seconddiv'>
         <div className='SeconddivWrapper'>
           <div className='ImageHolder'>
-            <img src="src/assets/home-second-pic.jpg" alt=""  className='Image2'/>
+            <img src={home2} alt=""  className='Image2'/>
           </div>
           <div className='TextwrapperSeconddiv'>
             <div className='textright'>
             <p><hr />Know About Us</p>
-            <h1>What We Do At Attack <br /> Against <span style={{color: "orangered", fontSize: '40px', letterSpacing: "5px"}}>Asthma</span> </h1>
+            <h1>What We Do At Attack <br /> Against <span className="AsthmaText">Asthma</span> </h1>
             <h3>We provide healthcare materials for asthmatic students and socioe 
              conomic marginalized groups in Nigeria to promote good health amon
              g the patients and reduce the risk of asthma, premature mortality and
               asthma communities.</h3>
-              <button className='Donatebutton'>Donate</button>
+              <button className='Donatebutton2' onClick={()=>navigate('/donate')}>Donate</button>
             </div>
           </div>
         </div>
@@ -82,18 +99,18 @@ const Home = () => {
          <div className='RightTexthld'>
             <div className='RightTextDiv'>
              <p> <hr />Our Services </p>
-             <h1>Our Initiative is motivated <br /> by <span style={{color: "orangered", fontSize: '45px'}}>SDG 3. Target 4</span> 
+             <h1>Our Initiative is motivated by  <br /><span className="SDGText">SDG 3. Target 4</span> 
              </h1>
              <div className='dive'> <FaRegDotCircle  style={{color: "orangered", fontSize: '18px'}}/>      To provide free asthmatic medications for students across tertiary <br /> institutions in Nigeria
              </div>
              <div className='dive'> <FaRegCircle  style={{color: "orangered", fontSize: '18px'}}/>      To proffer free asthma medications to socioeconomically <br /> marginalized groups, communities and individuals in Nigeri.
              </div>
              <div className='dive'> <FaRegDotCircle  style={{color: "orangered", fontSize: '18px'}}/>      To improve access to healthcare among socioeconomically <br /> disadvantaged through awareness, free medication and health promotion activities.</div>
-             <button className='LearnMorebtn'>Learn More  <FaArrowRight /></button>
+             <button className='LearnMorebtn' onClick={()=>navigate('/about-us')}>Learn More  <FaArrowRight /></button>
             </div>
          </div>
          <div className='LeftImg'>
-          <img src="src/assets/home-third-pic.jpg" alt=""  className='thirdimage'/>
+          <img src={home3} alt=""  className='thirdimage'/>
          </div>
         </div>
       </div>
@@ -106,7 +123,7 @@ const Home = () => {
            <div className='downsection'>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-fourth-pic.png" alt=""  className='imagebox1'/>
+                <img src={home4} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -118,15 +135,15 @@ const Home = () => {
                  donating 40 inhalers to asthmatic students in the 
                  University of Ibadan. The team that'll carry out the 
                  program includes Obedina Ayomide, Saka Ayeni and some 
-                 of our <span style={{color: "orangered", fontSize: '14px'}}>volunteers...</span>
+                 of our <span style={{color: "orangered", fontSize: '11px'}}>volunteers...</span>
 
                 </div>
-                <button className='LearnMorebtn'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-fifth-pic.jpg" alt=""  className='imagebox1'/>
+                <img src={home5} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -134,18 +151,18 @@ const Home = () => {
                 & Inhaler Access and Support.                </div>
                 <div className='box12'>
                 This project is to provide asthma education workshop and training for students,
-                 lecturers, and school authorities of  <span style={{color: "orangered", fontSize: '14px'}}>UNILORIN</span>, teach them how to recognize asthma symptoms. 
+                 lecturers, and school authorities of  <span style={{color: "orangered", fontSize: '11px'}}>UNILORIN</span>, teach them how to recognize asthma symptoms. 
                  use inhalers properly, and respond in emergencies. The goal is to create a supportive and safe 
                  environment for students.
                  
 
                 </div>
-                <button className='LearnMorebtn'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-sixth-pic.jpg" alt=""  className='imagebox1'/>
+                <img src={home6} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -155,18 +172,18 @@ const Home = () => {
                 An advocacy project that'll focus on
                         influencing local governments and institutions to adopt policies that
                  will improve air quality. reduce pollution, and ensure better living conditions for asthma sufferers in 
-                  <span style={{color: "orangered", fontSize: '14px'}}>Obafemi
+                  <span style={{color: "orangered", fontSize: '11px'}}>Obafemi
                   Awolowo university </span>
 
                  
 
                 </div>
-                <button className='LearnMorebtn'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             <div className='downsectionbox'>
               <div className='box1'>
-                <img src="src/assets/home-seventh-pic.jpg" alt=""  className='imagebox1'/>
+                <img src={home7} alt=""  className='imagebox1'/>
               </div>
               <div className='box2'>
                 <div className='box11'>
@@ -175,11 +192,11 @@ const Home = () => {
                 <div className='box12'>
                 An advocacy project will focus on influencing local governments and institutions 
                 to adopt policies that improve air quality, reduce pollution, and ensure better living 
-                conditions for asthma sufferers in <span style={{color: "orangered", fontSize: '14px'}}>Obafemi Awalawa University</span>
+                conditions for asthma sufferers in <span style={{color: "orangered", fontSize: '11px'}}>Obafemi Awalawa University</span>
                 . This includes lobbying for better
                  access to affordable asthma medication.
                 </div>
-                <button className='LearnMorebtn'>Learn More</button>
+                <button className='LearnMorebtn1' onClick={()=>navigate('/about-us')}>Learn More</button>
               </div>
             </div>
             
@@ -194,25 +211,25 @@ const Home = () => {
           </div>
           <div className='partnerlog'>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 2.png" alt="" className='partnerslogos'/>
+              <img src={award1} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 3.png" alt="" className='partnerslogos'/>
+              <img src={award2} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 4.png" alt="" className='partnerslogos'/>
+              <img src={award3} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 5.png" alt="" className='partnerslogos'/>
+              <img src={award4} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 6.png" alt="" className='partnerslogos'/>
+              <img src={award5} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 7.png" alt="" className='partnerslogos'/>
+              <img src={award6} alt="" className='partnerslogos'/>
             </div>
             <div className='imgpartners'>
-              <img src="src/assets/home-patners/download 8.png" alt="" className='partnerslogos'/>
+              <img src={award7} alt="" className='partnerslogos'/>
             </div>
           </div>
         </div>
@@ -225,7 +242,7 @@ const Home = () => {
           <div className='HWSODonations2'>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/home-eight-pic.jpg" alt=""  className='CardImfg' />
+                <img src={home8} alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
@@ -241,12 +258,12 @@ const Home = () => {
             </div>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/home-nine-pic.jpg" alt=""  className='CardImfg' />
+                <img src={home9} alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
                 <h5>On the 22nd of September 2023, Temitope Omosebi initiated a health charity program tagged AttackAgainstAsthma by donating 40 inhalers to asthmatic students in the University of Ibadan. The team that carried the program included the above named individual and some
-                of our <span style={{color: "orangered", fontSize: '18px', textDecoration: "underline"}}> 
+                of our <span style={{color: "orangered", fontSize: '15px', textDecoration: "underline"}}> 
                   VOLUNTEERS.</span></h5>
               </div>
               <div className='CardFooter'>
@@ -258,11 +275,11 @@ const Home = () => {
             </div>
             <div className='HWSDCard'>
               <div className='CardImage'>
-                <img src="src/assets/home-tenth-pic.jpg" alt=""  className='CardImfg' />
+                <img src={home10} alt=""  className='CardImfg' />
               </div>
               <div className='CardText'>
                 <h2>Inhaler Distribution In 2024</h2>
-                <h5>We visited 10 other school for asthma campaign tagged #attackagainstasthma. The movement was led by the founder,<span style={{color: "orangered", fontSize: '18px',}}> Temitope Omosebi</span>  with our volunteers. 20% of the donation was used for campaigns for the year 2024 which yielded good result in alignment with the our goals.</h5>
+                <h5>We visited 10 other school for asthma campaign tagged #attackagainstasthma. The movement was led by the founder,<span style={{color: "orangered", fontSize: '15px',}}> Temitope Omosebi</span>  with our volunteers. 20% of the donation was used for campaigns for the year 2024 which yielded good result in alignment with the our goals.</h5>
               </div>
               <div className='CardFooter'>
               <FaFacebook  size={30} style={{color: "Blue"}}/>
@@ -311,14 +328,14 @@ const Home = () => {
                 <h1>You Can Contribute To A Society That Is Asthma Aware
                    And Providing Inhalers For Asthmatic Student. </h1>
                   <div className='btnandselect'>
-                    <button className='Donatefooterbtn'>Donate</button>
+                    <button className='Donatefooterbtn' onClick={()=>navigate('/donate')}>Donate</button>
                     <div className="selectbtn" onClick={handleTgoggleDrop}>
                        Apply as 
                    <span> { !toggleDown ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp /> } </span> </div>
                    { toggleDown && (
                     <div className='Toggledrop2'>
-                      <h4>Asthmatic Students</h4>
-                       <h4>Volunteer</h4>
+                      <h4 onClick={()=>navigate('/asthmatic-student')}>Asthmatic Students</h4>
+                       <h4 onClick={()=>'/volunteer'}>Volunteer</h4>
                     </div>
                    )}
                   </div>

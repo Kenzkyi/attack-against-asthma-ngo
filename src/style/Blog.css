@@ -44,6 +44,10 @@
     }
 }
 
+.mobileviewText1,.mobileviewText{
+    display: none;
+}
+
 .imagewrap{
     height:96% ;
     width: 95%;
@@ -168,6 +172,8 @@
     background: rgb(18,94,100);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
     border-radius: 0px 13px 0px 13px;
     
     & h1 {
@@ -550,11 +556,10 @@
     padding: 8px;
 
     & button {
-        height: 60%;
-        width: 50%;
+        height: 45%;
+        width: 35%;
         border: none;
         outline: none;
-        background: rgb(18,94,100);
         border-radius: 5px;
         color: white;
         font-size: 20px;
@@ -572,9 +577,14 @@
     justify-content: center;
 }
 
+.content{
+    display: none;
+}
+
 .bodywrapper{
     height: 100%;
     width: 50%;
+    /* background: #000; */
     background: rgb(255,255,255);
     display: flex;
     align-items: center;
@@ -585,20 +595,23 @@
     height: 50%;
     width:  95%;
     /* background: red; */
-    display: flex;
-    /* align-items: center; */
+    display: block;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
+    /* padding: 10px; */
+    /* margin-top: 10px; */
 
     & strong {
         color: rgb(225,113,84);
+        margin: 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     }
 
     & p {
         font-size: 15px;
+        margin: 0;
         color: rgb(18,94,100);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -608,12 +621,15 @@
      font-size: 40px;
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      color: rgb(18,94,100);
+     margin: 0;
+
     }
 
     & h2 {
     font-size: 20px;
     color: rgb(18,94,100);
     font-weight: 400;
+    margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     }
@@ -626,9 +642,18 @@
         border-radius: 5px;
         color: white;
         font-size: 20px;
+        margin-top: 30px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background: rgb(18,94,100);
     }
+}
+
+.content{
+    display: none;
+}
+
+.mobileBtn{
+    display: none;
 }
 
 .bodywrapper1{
@@ -655,4 +680,191 @@
         height: 100%;
         width: 98%;
     }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .Body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .textwrap h1, p {
+        display: none;
+    }
+
+    .textwrap .mobileviewText1{
+        display: block;
+        color: rgb(18,94,100);
+        font-size: 20px;
+    }
+
+    .textwrap .mobileviewText{
+        display: block;
+        color: rgb(18,94,100);
+         text-align: center;
+
+        & strong{
+            color: red;
+        }
+    }
+      
+    .imagewrap {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .imagewrap1,
+    .imagewrap2,
+    .imagewrap3 {
+        width: 100%;
+    }
+
+    .textwrap h1 {
+        font-size: 24px;
+        flex-direction: column;
+    }
+
+    .textwrap p {
+        font-size: 16px;
+    }
+
+    .btn button {
+        width: 40%;
+        height: 90%;
+        font-size: 18px;
+    }
+
+    .bodywrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bodywrapper1 {
+        width: 100%;
+        gap: 20px;
+    }
+    .bodywrap2{
+         width: 100%;
+         flex-direction: column-reverse;
+    }
+
+    .bodywrapper2 button{
+        width: max-content;
+        padding: 7px;
+        margin-top: 15px;
+    }
+
+    .bodywrapper2 h1{
+        font-size: 25px;
+        font-weight: 700;
+        padding: 6px;
+    }
+
+    .bodywrapper2 h2{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+
+    .imagewrap1 .textt{
+        height: 55px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    
+    .imagewrap1 .text1 h1{
+        font-size: 15px;
+    }
+    
+    .imagewrap1{
+
+        .btn{
+            height: 68px;
+            width: 100%;
+            font-size: 18px;
+            background-color: white;   
+            display: flex;
+            justify-content: flex-start;
+
+            span{
+                height: 68px;
+                background-color: rgb(18,94,100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding-inline: 10px;
+            }
+        }
+    }
+
+    .imagewrap2 .textt{
+        height: 55px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+
+    .imagewrap2 .text1 h1{
+        font-size: 15px;
+    }
+
+    .imagewrap2{
+        .btn{
+            height: 68px;
+            width: 100%;
+            font-size: 18px;
+            background-color: white;   
+            display: flex;
+            justify-content: flex-start;
+
+            span{
+                height: 68px;
+                background-color: rgb(18,94,100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding-inline: 10px;
+            }
+        }
+        
+    }
+
+    .imagewrap3 .textt{
+        height: 55px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+
+    .imagewrap3 .text1 h1{
+        font-size: 15px;
+    }
+
+    .imagewrap3 {
+        .btn{
+            height: 68px;
+            width: 100%;
+            font-size: 18px;
+            background-color: white;   
+            display: flex;
+            justify-content: flex-start;
+
+            span{
+                height: 68px;
+                background-color: rgb(18,94,100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding-inline: 10px;
+            }
+        }
+        
+    }
+
 }

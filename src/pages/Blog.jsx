@@ -1,4 +1,6 @@
-import '../style/Blog.css'
+import "../style/Blog.css"
+import blog1 from '../assets/public/home-fourth-pic.png'
+import blog2 from '../assets/public/blog-second-pic.png'
 
 const Blog = () => {
   return (
@@ -8,6 +10,10 @@ const Blog = () => {
              <p>
               Know about attack against asthma
              </p>
+             <p className='mobileviewText1'>Blog Updates</p>
+             <h1 className='mobileviewText'> 
+              The <strong>Stories</strong> We Uncover are Visible
+             </h1>
              <h1>
               We are non governmental oraganisation
              </h1>
@@ -15,7 +21,7 @@ const Blog = () => {
          <div className='imagewrap'>
           <div className='imagewrap1'>
             <div className='img'>
-            <img src="src/assets/home-fourth-pic.png" alt="" />
+            <img src={blog1}/>
             </div>
             <div className='textt'>
             <h1>
@@ -32,12 +38,12 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
           <div className='imagewrap3'>
           <div className='img'>
-            <img src="src/assets/home-fourth-pic.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -54,12 +60,12 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
           <div className='imagewrap2'>
           <div className='img'>
-            <img src="src/assets/home-fourth-pic.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -76,7 +82,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
          </div>
@@ -85,7 +91,7 @@ const Blog = () => {
     <div className='imagewrap'>
           <div className='imagewrap1'>
             <div className='img'>
-            <img src="src/assets/home-fourth-pic.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -102,13 +108,13 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
 
           <div className='imagewrap3'>
           <div className='img'>
-            <img src="src/assets/home-fourth-pic.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -125,13 +131,13 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
 
           <div className='imagewrap2'>
           <div className='img'>
-            <img src="src/assets/home-fourth-pic.png" alt="" />
+            <img src={blog1} />
             </div>
             <div className='textt'>
             <h1>
@@ -148,7 +154,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
          </div>
@@ -168,13 +174,25 @@ const Blog = () => {
      </div>
      <div className='bodywrapper1' >
   <div className='manshowing'>
-<img src="src/assets/blog-second-pic.png" alt="" />
+  <img src={blog2} />
   </div>
      </div>
      </div>
 
+     <div className="content" style={{backgroundColor:'green'}}>
+    <div className="Textwrap">
+    <p>Health Tips</p>
+      <h1>Herere 10 Things To Know As An <strong>Asthmatics</strong></h1>
+      <h2>navigating with certain health conditiond might
+        seems impossible and biarsed but we have gathered sreamlined information
+        and tips for you to effectively scale through............ 
+
+      </h2>
+        <button className='mobileBtn'>Learn more</button>
+    </div>
+</div>
    </div>
-   
+
   )
 }
 

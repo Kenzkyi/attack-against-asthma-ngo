@@ -1,0 +1,92 @@
+.success{
+    /* height: 100vh; */
+    /* width: 100%; */
+    background-color: #18181880;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    z-index: 100000;
+    align-items: center;
+    /* padding: 40px; */
+    overflow: hidden;
+}
+.success-holder{
+    height: 90vh;
+    width: 65%;
+    /* margin-top: 604px; */
+    border-radius: 20px;
+    /* background: linear-gradient(white,#125E64); */
+    /* background-color: aqua; */
+    background: url('/src/assets/public/Success.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+
+    nav{
+        height: 234px;
+        width: 70%;
+        /* background-color: wheat; */
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 32px; */
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding-bottom: 20px;
+
+        h5{
+            font-weight: 700;
+            font-size: 60px;
+        }
+
+        h6{
+            font-weight: 700;
+            font-size: 16px;
+            width: 85%;
+            text-align: center;
+            /* background-color: aqua; */
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+        }
+
+        button{
+            height: 40px;
+            width: 167px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            background-color: #125E64;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:850px) {
+
+            height: 28vh;
+            width: 85%;
+
+            margin-bottom: 120px;
+            h5{
+                font-size: 30px;
+            }
+        }
+
+
+    }
+
+}

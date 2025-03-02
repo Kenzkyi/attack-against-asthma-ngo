@@ -1,4 +1,4 @@
- import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Blog from './pages/Blog'
@@ -12,18 +12,18 @@ import MainHolder from './components/MainHolder'
 const App = () => {
   return (
 
-    
+
     <HashRouter>
       <Routes>
-       <Route element={<MainHolder/>}>
-       <Route path='' element={<Home/>}/>
-        <Route path='about-us' element={<AboutUs/>}/>
-        <Route path='blog' element={<Blog/>}/>
-        <Route path='contact-us' element={<ContactUs/>}/>
-        <Route path='asthmatic-student' element={<AsthmaticStudent/>}/>
-        <Route path='volunteer' element={<Volunteer/>}/>
-        <Route path='donate' element={<Donate/>}/>
-       </Route>
+        <Route element={<MainHolder />}>
+          <Route path='' element={<Home />} />
+          <Route path='about-us' element={<AboutUs />} />
+          <Route path='blog' element={<Blog />} />
+          <Route path='contact-us' element={<ContactUs />} />
+          <Route path='asthmatic-student' element={<AsthmaticStudent />} />
+          <Route path='volunteer' element={<Volunteer />} />
+          <Route path='donate' element={<Donate />} />
+        </Route>
       </Routes>
     </HashRouter>
   )
