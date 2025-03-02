@@ -67,10 +67,10 @@ const Header = () => {
       {menuVisible && (
         <div className="menubar1">
           <ul className="bugtextwrap">
-            <li className="bugtext">
+            <li className="bugtext" onClick={handleHome}>
               <span><GoHome /></span> Home
             </li>
-            <li className="bugtext" onClick={handleAbout}>
+            <li className="bugtext" nClick={handleHome}>
               <span><GrGroup /></span> About
             </li>
             <li className="bugtext" onClick={handleBlog}>
