@@ -12,6 +12,7 @@
     z-index: 100000;
     align-items: center;
     /* padding: 40px; */
+    overflow: hidden;
 }
 .success-holder{
     height: 90vh;
