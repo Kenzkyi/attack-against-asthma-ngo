@@ -172,6 +172,8 @@
     background: rgb(18,94,100);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
     border-radius: 0px 13px 0px 13px;
     
     & h1 {
@@ -558,7 +560,6 @@
         width: 35%;
         border: none;
         outline: none;
-        background: rgb(18,94,100);
         border-radius: 5px;
         color: white;
         font-size: 20px;
@@ -682,7 +683,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .Body {
         height: auto;
         padding: 20px;
@@ -772,16 +773,32 @@
         font-size: 20px;
         padding: 10px;
     }
-
-
+    
+    
     .imagewrap1 .text1 h1{
         font-size: 15px;
     }
+    
+    .imagewrap1{
 
-    .imagewrap1 .btn{
-        height: 68px;
-        font-size: 18px;
-        
+        .btn{
+            height: 68px;
+            width: 100%;
+            font-size: 18px;
+            background-color: white;   
+            display: flex;
+            justify-content: flex-start;
+
+            span{
+                height: 68px;
+                background-color: rgb(18,94,100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding-inline: 10px;
+            }
+        }
     }
 
     .imagewrap2 .textt{
@@ -795,9 +812,25 @@
         font-size: 15px;
     }
 
-    .imagewrap2 .btn{
-        height: 68px;
-        font-size: 18px;
+    .imagewrap2{
+        .btn{
+            height: 68px;
+            width: 100%;
+            font-size: 18px;
+            background-color: white;   
+            display: flex;
+            justify-content: flex-start;
+
+            span{
+                height: 68px;
+                background-color: rgb(18,94,100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding-inline: 10px;
+            }
+        }
         
     }
 
@@ -812,9 +845,25 @@
         font-size: 15px;
     }
 
-    .imagewrap3 .btn{
-        height: 68px;
-        font-size: 18px;
+    .imagewrap3 {
+        .btn{
+            height: 68px;
+            width: 100%;
+            font-size: 18px;
+            background-color: white;   
+            display: flex;
+            justify-content: flex-start;
+
+            span{
+                height: 68px;
+                background-color: rgb(18,94,100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding-inline: 10px;
+            }
+        }
         
     }
 
