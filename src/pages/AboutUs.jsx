@@ -1,6 +1,9 @@
+
 import React from "react";
 import "../style/AboutUs.css";
-// import HeroVideo from "../assets/HeroVideo.png";
+import Team from "./Team";
+import AwardSection from "./AwardSection";
+import ContributionSection from "./ContributionSection";
 
 const AboutUs = () => {
   return (
@@ -32,18 +35,20 @@ const AboutUs = () => {
         </div>
       </header>
       <div className="image-container">
-        <img
-          // src={HeroVideo}
-          alt="Team members of Attack Against Asthma"
-          className="team-image"
-        />
-
-        <button className="play-button">▶</button>
+        <div className="image-container-wrap">
+          <img
+            src="/src/assets/aboutus-first-pic.png"
+            alt="Team members of Attack Against Asthma"
+            className="team-image2"
+          />
+          <div className="image-bg-about"></div>
+          <button className="play-button">▶</button>
+        </div>
       </div>
       <div className="bio-mission">
         <h2 className="bio-title">Brif Bio, Mission & Vision</h2>
         <p className="bio-founder">
-          Founded by Temitope Omosebi Enoch and a passionate group <br /> of
+          Founby Temitope Omosebi Enoch and a passionate group <br /> of
           healthcare professionals, educators, and community leaders
         </p>
         <p className="bio-text">
@@ -66,8 +71,8 @@ const AboutUs = () => {
           effectively.
         </p>
         <p className="bio-text">
-          We work tirelessly to raise awareness about asthma's impact on
-          students' lives, ensuring that teachers, parents, and peers are
+          We work tirelessly to raise awareness about asthmas impact on
+          students lives, ensuring that teachers, parents, and peers are
           informed and ready to support. <br />
           Our asthma-friendly initiatives, like providing inhalers to schools
           and organizing community outreach programs, help create safer and
@@ -78,6 +83,9 @@ const AboutUs = () => {
       <div className="divider-cont">
         <hr className="second-divider" />
       </div>
+      <Team />
+      <AwardSection />
+      <ContributionSection />
     </div>
   );
 };
