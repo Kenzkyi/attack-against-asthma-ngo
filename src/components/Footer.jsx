@@ -1,10 +1,7 @@
 import "../style/Footer.css"
-import picture from "../assets/public/logo1.png"
-import pix1 from "../assets/public/youtube1.png"
-import pix2 from "../assets/public/twitter1.png"
-import pix3 from "../assets/public/instagram1.png"
-import pix4 from "../assets/public/facebook1.png"
+import logo from '../assets/public/logo1.png'
 import { useNavigate } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 
 function Footer(){
 
@@ -31,69 +28,51 @@ function Footer(){
   
   
     return(
-        <div className="fullwrap">
-            <div className="footernotifications">
-               
-                    <img src={picture} alt="" className="homeicon" />
-               
-                
-                <div className="writeupcont">
-                <div className="">
-                    <h2 className="wrapname">Quick links</h2>
-                    <h3 className="word" onClick={handleHome}>Home</h3>
-                    <h3 className="word" onClick={handleAbout}>About Us</h3>
-                    <h3 className="word" onClick={handleContact}>Contact Us</h3>
-                    <h3 className="word" onClick={handleBlog}>Blog</h3>
+        <div className="footer">
+            <div className="footer-top">
+                <div className="footer-topwrapper">
+                    <main>
+                        <img src={logo} />
+                    </main>
+                    <nav>
+                        <ul>
+                            <h6>Quick links</h6>
+                            <li onClick={handleHome}>Home</li>
+                            <li onClick={handleAbout}>About Us</li>
+                            <li onClick={handleContact}>Contact Us</li>
+                            <li onClick={handleBlog}>Blog</li>
+                        </ul>
+                        <ol>
+                            <h6>Quick links</h6>
+                            <li>Donate</li>
+                            <li>Apply now</li>
+                            <li>Events</li>
+                            <li>Projects</li>
+                        </ol>
+                        <section>
+                            <h6>Contact Info</h6>
+                            <span>+2348121530907</span>
+                            <span>attackagainstasthma@gmail.com</span>
+                            <span>Privacy policy</span>
+                        </section>
+                    </nav>
+                    <aside>
+                        <span>Subscribe to get our latest updates</span>
+                        <input type="text" placeholder="enter your email address" />
+                        <button>Subscribe</button>
+                    </aside>
                 </div>
-
-                <div>
-                    <h2 className="wrapname">Quick links</h2>
-                    <p className="name1">Donate</p>
-                    <p className="name1">Apply now</p>
-                    <p className="name1">Events</p>
-                    <p className="name1">Projects</p>
-                </div>
-
-                <div>
-                    <h2 className="wrapname">Contact info</h2>
-                    <p className="name1">+238121530907</p>
-                    <p className="name1">attackagainstasthma@gmail.com</p>
-                    <p className="name1">Privacy policy</p>
-                </div>
-
-                <div>
-                    <h2 className="word1">Subscribe to get our latest updates</h2>
-
-                    <div className="inputwrap">
-                   <input type="text" placeholder="enter your email address" style={{width: "100%", height: "50px", 
-                    borderRadius: "10px", backgroundColor: "black", color: "white"
-                   }}/>
-                   <button className="btn">Subscribe</button>
-                   </div>
-                </div>
-                </div>
-
             </div>
-
-            
-            <div className="socialmediawrap">
-                <h3 className="copy">Copyright 2025 attackagainstasthma</h3>
-
-                <div className="iconwrap">
-                    <img src={pix1} alt="" className="mediaicon"/>
-                    <img src={pix2} alt="" className="mediaicon"/>
-                    <img src={pix3} alt="" className="mediaicon"/>
-                    <img src={pix4} alt="" className="mediaicon"/>
-
-                </div>
-
+            <div className="footer-bottom">
+                <section>Copyright 2025 attackagainstasthma</section>
+                <article>
+                <FaYoutube cursor={'pointer'}/>
+                <FaTwitter cursor={'pointer'}/>
+                <FaFacebook cursor={'pointer'}/>
+                <FaInstagram cursor={'pointer'}/>
+                </article>
             </div>
-
-            
-
         </div>
-
-
     )
 }
 

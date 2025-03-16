@@ -16,25 +16,36 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const navigate = useNavigate();
+  const [line,setLine] = useState({
+    line1:true,
+    line2:false,
+    line3:false,
+    line4:false
+
+  })
 
   const handleHome = () => {
     navigate("/");
     setMenuVisible(false)
+    setLine({line1:true})
   };
 
   const handleBlog = () => {
     navigate("/blog");
     setMenuVisible(false)
+    setLine({line3:true})
   };
 
   const handleContact = () => {
     navigate("/contact-us");
     setMenuVisible(false)
+    setLine({line4:true})
   };
 
   const handleAbout = () => {
     navigate("/about-us");
     setMenuVisible(false)
+    setLine({line2:true})
   };
 
   const handleDonate = () => {
@@ -54,6 +65,8 @@ const Header = () => {
     setIsOpen(false)
     setMenuVisible(false)
   };
+
+
 
   return (
     <div className="header">
@@ -95,14 +108,22 @@ const Header = () => {
         <img src={pix} alt="" />
       </div>
       <div className="headerwarp1">
-        <h1 onClick={handleHome}>Home</h1>
-        <h1 onClick={handleAbout}>About</h1>
-        <h1 onClick={handleBlog}>Blog</h1>
-        <h1 onClick={handleContact}>Contact-us</h1>
+        <h1 onClick={handleHome}>Home
+        <div style={{display:line.line1?'flex':'none'}} className="home-line1"></div>
+        </h1>
+        <h1 onClick={handleAbout}>About
+        <div style={{display:line.line2?'flex':'none'}} className="home-line2"></div>
+        </h1>
+        <h1 onClick={handleBlog}>Blog
+        <div style={{display:line.line3?'flex':'none'}} className="home-line3"></div>
+        </h1>
+        <h1 onClick={handleContact}>Contact-us
+        <div style={{display:line.line4?'flex':'none'}} className="home-line4"></div>
+        </h1>
       </div>
       <div className="headerwarp2">
         <div className="dropdown1">
-          <h1 className="dropdown1-header">
+          <h1 className="dropdown1-header" onClick={() => setIsOpen(!isOpen)}>
             Apply As
             <span onClick={() => setIsOpen(!isOpen)} className="icon">
               {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}

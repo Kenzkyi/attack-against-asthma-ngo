@@ -32,7 +32,7 @@ const ContactUs = () => {
         <div className="contactus-left">
             <h6>Contact Us</h6>
             <h5>We do love to hear from you</h5>
-            <p>Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details.</p>
+            <span>Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details.</span>
             <nav>
               <a><FaYoutube fontSize={35} cursor={'pointer'}/></a>
               <a><FaTwitter fontSize={35} cursor={'pointer'}/></a>
