@@ -211,6 +211,7 @@
 
     @media screen and (max-width:550px) {
         font-size: 13px;
+        padding-inline: 20px;
         article{
             width: 70%;
         }
