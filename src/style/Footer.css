@@ -165,7 +165,7 @@
 
         @media screen and (max-width:550px) {
             main{
-                width: 60%;
+                width: 80%;
             }
             nav{
                 width: 70%;
@@ -210,6 +210,7 @@
     }
 
     @media screen and (max-width:550px) {
+        font-size: 13px;
         article{
             width: 70%;
         }
