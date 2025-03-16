@@ -38,7 +38,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
           <div className='imagewrap3'>
@@ -60,7 +60,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
           <div className='imagewrap2'>
@@ -82,7 +82,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
          </div>
@@ -108,7 +108,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
 
@@ -131,7 +131,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
 
@@ -154,7 +154,7 @@ const Blog = () => {
              </h1>
             </div>
             <div className='btn'>
-                <button>Learn more</button>
+                <span>Learn more</span>
             </div>
           </div>
          </div>
